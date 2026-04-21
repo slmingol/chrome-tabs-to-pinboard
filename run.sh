@@ -94,6 +94,13 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
+# ─── Load .env if present ────────────────────────────────────────────────────
+if [[ -f "${SCRIPT_DIR}/.env" ]]; then
+  set -a  # automatically export all variables
+  source "${SCRIPT_DIR}/.env"
+  set +a
+fi
+
 # ─── Pinboard token check ────────────────────────────────────────────────────
 PINBOARD_TOKEN="${PINBOARD_TOKEN:-}"
 if [[ -z "$DRY_RUN" && ! "$PINBOARD_TOKEN" == *:* ]]; then

@@ -59,12 +59,13 @@ This tool extracts all tabs from a Chrome window, analyzes their content, genera
 ```bash
 # 1. Clone and setup
 cd ~/dev/projects
-git clone <repo-url> chrome-tabs-to-pinboard
+git clone https://github.com/slmingol/chrome-tabs-to-pinboard.git
 cd chrome-tabs-to-pinboard
 make install
 
-# 2. Set your Pinboard token
-export PINBOARD_TOKEN="username:hextoken"
+# 2. Configure Pinboard token
+cp .env.example .env
+# Edit .env and add your token from https://pinboard.in/settings/password
 
 # 3. Test with first 5 tabs
 make test
@@ -78,7 +79,7 @@ make close-all
 1. Clone or download this project:
    ```bash
    cd ~/dev/projects
-   git clone <repo-url> chrome-tabs-to-pinboard
+   git clone https://github.com/slmingol/chrome-tabs-to-pinboard.git
    cd chrome-tabs-to-pinboard
    ```
 
@@ -89,13 +90,26 @@ make close-all
    make install
    ```
 
-3. Set your Pinboard API token:
+3. Configure your Pinboard API token:
    ```bash
-   export PINBOARD_TOKEN="username:hextoken"
+   # Copy the example file
+   cp .env.example .env
+   
+   # Edit .env and replace with your actual token
+   # Get your token from: https://pinboard.in/settings/password
+   nano .env  # or vim, code, etc.
    ```
    
-   To make this permanent, add it to your `~/.zshrc` or `~/.bashrc`:
+   The `.env` file should look like:
+   ```
+   PINBOARD_TOKEN=username:hextoken
+   ```
+   
+   **Alternative:** Export it directly in your shell:
    ```bash
+   export PINBOARD_TOKEN="username:hextoken"
+   
+   # Or add to ~/.zshrc or ~/.bashrc to make it permanent:
    echo 'export PINBOARD_TOKEN="username:hextoken"' >> ~/.zshrc
    ```
 
