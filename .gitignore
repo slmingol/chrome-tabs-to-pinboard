@@ -1,0 +1,26 @@
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+._*
+
+# Test/debug files
+test_*.sh
+debug_*.sh
+*.log
+
+# Temporary files
+*.tmp
+.tmp/
+
+# Don't commit sensitive tokens
+.env
+.env.local
+
+# Cache (user-specific)
+.cache/

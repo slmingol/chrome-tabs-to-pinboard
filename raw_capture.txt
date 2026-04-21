@@ -1,0 +1,1892 @@
+ $ ▶ ./run.sh --window 1 --dedupe
+Reading tabs from Chrome window 1 ...
+Activating and reloading all tabs in window 1 to wake suspended tabs...
+Waiting for pages to load...
+Extracting URLs...
+Found 12 tab(s) in window 1.
+Filtered 4 non-HTTP/S tabs.
+Skipped 0 filtered domain(s).
+Using cached bookmarks (1.2h old, 47040 bookmarks).
+Processing 8 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/8] ✓
+       https://volumio.com/get-started/
+[2/8] ✓
+       https://shop.volumio.com/
+[3/8] ✓
+       https://www.reddit.com/r/youtubedl/comments/1n6nzb6/so_are_my_options_essentially_pay_to_play_and/
+[4/8] ⊘   (already in Pinboard)
+       https://www.tunemymusic.com/
+[5/8] ✓
+       https://github.com/jmbannon/musicbee-docker
+[6/8] ✓
+       https://www.jimwillis.org/2024/12/08/adventures-in-self-hosting-hifi-audio-streaming/
+[7/8] ✓
+       https://getmusicbee.com/forum/index.php?topic=42906.0
+[8/8] ✓
+       https://www.reddit.com/r/androidapps/comments/lwex65/good_music_player_app_that_plays_network_shares/
+
+Done. Added: 7  Skipped: 1  Failed: 0
+ 19:57:01 ▶[673]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe
+Reading tabs from Chrome window 1 ...
+Activating and reloading all tabs in window 1 to wake suspended tabs...
+Waiting for pages to load...
+Extracting URLs...
+Found 1 tab(s) in window 1.
+Filtered 1 non-HTTP/S tabs.
+Skipped 0 filtered domain(s).
+Using cached bookmarks (1.2h old, 47040 bookmarks).
+Processing 0 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+
+Done. Added: 0  Skipped: 0  Failed: 0
+ 19:58:04 ▶[674]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe
+Reading tabs from Chrome window 1 ...
+Activating and reloading all tabs in window 1 to wake suspended tabs...
+Waiting for pages to load...
+Extracting URLs...
+Found 12 tab(s) in window 1.
+Filtered 1 non-HTTP/S tabs.
+Skipped 0 filtered domain(s).
+Using cached bookmarks (1.2h old, 47040 bookmarks).
+[4/11] ✗  https://shop.volumio.com/
+       socket hang up
+Processing 11 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/11] ✓
+       https://tidal.com/
+[2/11] ⊘   (already in Pinboard)
+       https://volumio.com/
+[3/11] ✓
+       https://volumio.com/get-started/
+[5/11] ✓
+       https://www.reddit.com/r/YoutubeMusic/comments/1funndd/using_tunemymusic_just_banned_my_account_anyone/
+[6/11] ✓
+       https://www.reddit.com/r/youtubedl/comments/1n6nzb6/so_are_my_options_essentially_pay_to_play_and/
+[7/11] ⊘   (already in Pinboard)
+       https://www.tunemymusic.com/
+[8/11] ✓
+       https://github.com/jmbannon/musicbee-docker
+[9/11] ✓
+       https://www.jimwillis.org/2024/12/08/adventures-in-self-hosting-hifi-audio-streaming/
+[10/11] ✓
+       https://getmusicbee.com/forum/index.php?topic=42906.0
+[11/11] ✓
+       https://www.reddit.com/r/androidapps/comments/lwex65/good_music_player_app_that_plays_network_shares/
+
+Done. Added: 8  Skipped: 2  Failed: 1
+ 20:00:08 ▶[675]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --close-tabs --no-reload
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 12 tab(s) in window 1.
+Filtered 1 non-HTTP/S tabs.
+Skipped 0 filtered domain(s).
+Using cached bookmarks (1.2h old, 47040 bookmarks).
+Closing 11 tab(s)...
+Closing 11 tab(s) in window 1...
+Closed 0 tab(s)
+Processing 11 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/11] ✓
+       https://tidal.com/
+[2/11] ⊘   (already in Pinboard)
+       https://volumio.com/
+[3/11] ✓
+       https://volumio.com/get-started/
+[4/11] ✓
+       https://shop.volumio.com/
+[5/11] ✓
+       https://www.reddit.com/r/YoutubeMusic/comments/1funndd/using_tunemymusic_just_banned_my_account_anyone/
+[6/11] ✓
+       https://www.reddit.com/r/youtubedl/comments/1n6nzb6/so_are_my_options_essentially_pay_to_play_and/
+[7/11] ⊘   (already in Pinboard)
+       https://www.tunemymusic.com/
+[8/11] ✓
+       https://github.com/jmbannon/musicbee-docker
+[9/11] ✓
+       https://www.jimwillis.org/2024/12/08/adventures-in-self-hosting-hifi-audio-streaming/
+[10/11] ✓
+       https://getmusicbee.com/forum/index.php?topic=42906.0
+[11/11] ✓
+       https://www.reddit.com/r/androidapps/comments/lwex65/good_music_player_app_that_plays_network_shares/
+
+Done. Added: 9  Skipped: 2  Failed: 0
+ 20:00:52 ▶[676]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --close-tabs --no-reload
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 12 tab(s) in window 1.
+Filtered 1 non-HTTP/S tabs.
+Skipped 0 filtered domain(s).
+Using cached bookmarks (1.2h old, 47040 bookmarks).
+Closing 11 tab(s)...
+Closing 11 tab(s) in window 1...
+Closed 11 tab(s)
+Processing 11 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/11] ✓
+       https://tidal.com/
+[2/11] ⊘   (already in Pinboard)
+       https://volumio.com/
+[3/11] ✓
+       https://volumio.com/get-started/
+[4/11] ✓
+       https://shop.volumio.com/
+[5/11] ✓
+       https://www.reddit.com/r/YoutubeMusic/comments/1funndd/using_tunemymusic_just_banned_my_account_anyone/
+[6/11] ✓
+       https://www.reddit.com/r/youtubedl/comments/1n6nzb6/so_are_my_options_essentially_pay_to_play_and/
+[7/11] ⊘   (already in Pinboard)
+       https://www.tunemymusic.com/
+[8/11] ✓
+       https://github.com/jmbannon/musicbee-docker
+[9/11] ✓
+       https://www.jimwillis.org/2024/12/08/adventures-in-self-hosting-hifi-audio-streaming/
+[10/11] ✓
+       https://getmusicbee.com/forum/index.php?topic=42906.0
+[11/11] ✓
+       https://www.reddit.com/r/androidapps/comments/lwex65/good_music_player_app_that_plays_network_shares/
+
+Done. Added: 9  Skipped: 2  Failed: 0
+ 20:01:39 ▶[677]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe
+Reading tabs from Chrome window 1 ...
+Activating and reloading all tabs in window 1 to wake suspended tabs...
+Waiting for pages to load...
+Extracting URLs...
+Found 5 tab(s) in window 1.
+Filtered 2 non-HTTP/S tabs.
+Skipping x.com: https://x.com/RodmanAi/status/2033143653183668732
+Skipped 1 filtered domain(s).
+Using cached bookmarks (1.3h old, 47040 bookmarks).
+Processing 2 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/2] ✓
+       https://www.reddit.com/r/kubernetes/comments/1qaeevv/kubeattention_a_small_project_using_transformers/
+[2/2] ✓
+       https://www.gofundme.com/f/keep-paradigm-percussion-rolling-smoothly?attribution_id=sl:af49cfdc-4d04-4091-a343-83e3e2366b9f&lang=en_US&ts=1772057688
+
+Done. Added: 2  Skipped: 0  Failed: 0
+ 20:02:54 ▶[678]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --close-tabs --no-reload
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 5 tab(s) in window 1.
+Filtered 2 non-HTTP/S tabs.
+Skipping x.com: https://x.com/RodmanAi/status/2033143653183668732
+Skipped 1 filtered domain(s).
+Using cached bookmarks (1.3h old, 47040 bookmarks).
+Closing 2 tab(s)...
+Closing 2 tab(s) in window 1...
+Closed 2 tab(s)
+Processing 2 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/2] ✓
+       https://www.reddit.com/r/kubernetes/comments/1qaeevv/kubeattention_a_small_project_using_transformers/
+[2/2] ✓
+       https://www.gofundme.com/f/keep-paradigm-percussion-rolling-smoothly?attribution_id=sl:af49cfdc-4d04-4091-a343-83e3e2366b9f&lang=en_US&ts=1772057688
+
+Done. Added: 2  Skipped: 0  Failed: 0
+ 20:03:07 ▶[679]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --close-tabs --no-reload
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 3 tab(s) in window 1.
+Filtered 2 non-HTTP/S tabs.
+Skipping x.com: https://x.com/RodmanAi/status/2033143653183668732
+Skipped 1 filtered domain(s).
+Using cached bookmarks (1.3h old, 47040 bookmarks).
+Processing 0 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+
+Done. Added: 0  Skipped: 0  Failed: 0
+ 20:03:20 ▶[680]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --close-tabs --no-reload
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 3 tab(s) in window 1.
+Skipping x.com: https://x.com/RodmanAi/status/2033143653183668732
+Skipped 1 filtered domain(s).
+Using cached bookmarks (1.3h old, 47040 bookmarks).
+Closing 2 tab(s)...
+Closing 2 tab(s) in window 1...
+Closed 2 tab(s)
+Processing 2 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/2] ✓
+       https://ledinhcuong99.medium.com/integrate-k8s-to-grafana-dashboard-9a9e7182fa0c
+[2/2] ✓
+       https://www.reddit.com/r/kubernetes/comments/1qkt0m9/cruisekube_a_justintime_opensource_kubernetes/
+
+Done. Added: 2  Skipped: 0  Failed: 0
+ 20:03:44 ▶[681]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe
+Reading tabs from Chrome window 1 ...
+Activating and reloading all tabs in window 1 to wake suspended tabs...
+Waiting for pages to load...
+Extracting URLs...
+Found 34 tab(s) in window 1.
+Filtered 7 non-HTTP/S tabs.
+Skipping x.com: https://x.com/RodmanAi/status/2033143653183668732
+Skipping x.com: https://x.com/JackRhysider/status/1876661329727029726
+Skipping x.com: https://x.com/GergelyOrosz/status/1941577544702230995
+Skipping x.com: https://x.com/tobi/status/2005106172316319758
+Skipping x.com: https://x.com/GergelyOrosz/status/2011527346445304141
+Skipping x.com: https://x.com/mdancho84/status/2012532210331509212
+Skipping x.com: https://x.com/CyberRacheal/status/2033825810369351884
+Skipping x.com: https://x.com/systemdesignone/status/2033531695111020757
+Skipping x.com: https://x.com/smarterclayton/status/2038979466857242649
+Skipping x.com: https://x.com/NikkiSiapno/status/2036801031896744408
+Skipping x.com: https://x.com/systemdesignone/status/2039681861211844778
+Skipping x.com: https://x.com/systemdesignone/status/2039681861211844778
+Skipping x.com: https://x.com/heyrimsha/status/2040038974627180594?shem=dsdf
+Skipping x.com: https://x.com/GergelyOrosz/status/2041188932243571188
+Skipping x.com: https://x.com/Hey_Aivetra/status/2043391821989244962
+Skipping x.com: https://x.com/sjsandeep_jain/status/2043143313126269285
+Skipping x.com: https://x.com/charliejhills/status/2043214357337911589
+Skipped 17 filtered domain(s).
+Using cached bookmarks (1.3h old, 47040 bookmarks).
+Processing 10 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/10] ✓
+       https://www.youtube.com/watch?v=E5B0cS6XRkg
+[2/10] ✓
+       https://www.reddit.com/r/jellyfin/comments/13y003v/praise_post_synfonium_is_awesome_music_app_for/
+[3/10] ✓
+       https://www.reddit.com/r/linux_gaming/comments/1et5h6z/why_bazzite_is_considered_not_good_for_a_pc_build/
+[4/10] ✓
+       https://medium.com/lets-code-future/12-open-source-alternatives-to-your-paid-saas-tools-you-must-try-604391b02086
+[5/10] ✓
+       https://www.howtogeek.com/tricks-to-keep-home-assistant-automations-in-check/
+[6/10] ✓
+       https://www.facebook.com/reel/3284425465064978
+[7/10] ✓
+       https://www.instagram.com/reel/DWj4ctQEsD8/
+[8/10] ✓
+       https://www.howtogeek.com/smart-home-brands-to-avoid-if-you-use-home-assistant/
+[9/10] ✓
+       https://www.howtogeek.com/3-homelab-projects-to-try-this-weekend-november-21-23/
+[10/10] ✓
+       https://www.reddit.com/r/homeassistant/comments/1i385hy/shout_out_to_ratgdo/
+
+Done. Added: 10  Skipped: 0  Failed: 0
+ 20:05:45 ▶[682]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --close-tabs --no-reload
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 17 tab(s) in window 1.
+Filtered 4 non-HTTP/S tabs.
+Skipped 0 filtered domain(s).
+Using cached bookmarks (1.4h old, 47040 bookmarks).
+Closing 13 tab(s)...
+Closing 13 tab(s) in window 1...
+Closed 13 tab(s)
+Processing 13 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/13] ✓
+       https://www.reddit.com/r/jellyfin/comments/1osu7id/tool_jellyfindbfix_automated_script_to_repair/
+[2/13] ✓
+       https://www.reddit.com/r/jellyfin/comments/1oth3dm/what_do_i_need_to_know_about_setting_up_live_tv/
+[3/13] ✓
+       https://github.com/Moonfin-Client/AndroidTV-FireTV/releases/tag/1.1.0
+[4/13] ✓
+       https://github.com/ranaldsgift/KefinTweaks#prerequisites
+[5/13] ✓
+       https://www.reddit.com/r/youtubedl/comments/1pd057v/ytdlp_got_my_youtube_account_blocked_sorta/
+[6/13] ✓
+       https://www.reddit.com/r/jellyfin/comments/1p714rq/moonfin_v110_released_first_native_jellyfin/
+[7/13] ✓
+       https://www.reddit.com/r/sonarr/comments/1ppghex/upgrading_content_to_h265/
+[8/13] ✓
+       https://www.reddit.com/r/jellyfin/comments/1p6g1ad/suitable_cpu_for_jellyfin_with_multiple_remote/
+[9/13] ✓
+       https://www.reddit.com/r/JellyfinCommunity/comments/1p7yz8l/finally_upgrading_from_10107_to_10113/
+[10/13] ✓
+       https://www.reddit.com/r/JellyfinCommunity/comments/1pdjq8n/update_kefintweaks_v040/
+[11/13] ⊘   (already in Pinboard)
+       https://github.com/Jellify-Music/App
+[12/13] ⊘   (already in Pinboard)
+       https://github.com/enoch85/bazarr-jellyfin
+[13/13] ✓
+       https://www.reddit.com/r/JellyfinCommunity/comments/1pprq3o/what_quality_profiles_do_you_use_for_radarrsonarr/
+
+Done. Added: 11  Skipped: 2  Failed: 0
+ 20:15:07 ▶[683]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --close-tabs --no-reload
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 4 tab(s) in window 1.
+Skipped 0 filtered domain(s).
+Using cached bookmarks (1.5h old, 47040 bookmarks).
+Closing 4 tab(s)...
+Closing 4 tab(s) in window 1...
+Closed 4 tab(s)
+Processing 4 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/4] ✓
+       https://www.reddit.com/r/JellyfinCommunity/comments/1pglsfg/which_android_tv_jellyfin_client_do_you_use/
+[2/4] ✓
+       https://www.jeffgeerling.com/blog/2025/all-intel-gpus-run-on-raspberry-pi-and-risc-v/
+[3/4] ✓
+       https://github.com/n00bcodr/Jellyfin-JavaScript-Injector
+[4/4] ⊘   (already in Pinboard)
+       https://www.reddit.com/r/selfhosted/comments/1pfuhj4/updates_to_jellify/
+
+Done. Added: 3  Skipped: 1  Failed: 0
+ 20:15:42 ▶[684]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe
+Reading tabs from Chrome window 1 ...
+Activating and reloading all tabs in window 1 to wake suspended tabs...
+Waiting for pages to load...
+Extracting URLs...
+Found 63 tab(s) in window 1.
+Filtered 34 non-HTTP/S tabs.
+Skipping x.com: https://x.com/GergelyOrosz/status/1953778408816566529
+Skipping x.com: https://x.com/ID_AA_Carmack/status/1986844783457800606
+Skipping x.com: https://x.com/GergelyOrosz/status/1992271230393892997
+Skipping x.com: https://x.com/GergelyOrosz/status/1992677428272173266
+Skipping x.com: https://x.com/phoronix/status/1993128847337046285
+Skipping x.com: https://x.com/GergelyOrosz/status/1993426949104865428
+Skipped 6 filtered domain(s).
+Using cached bookmarks (1.5h old, 47040 bookmarks).
+[7/23] ✗  https://medium.com/@bornaly/the-one-linux-security-habit-that-exposes-you-and-how-i-fixed-it-7ad94ee1d4b1
+       socket hang up
+Processing 23 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/23] ✓
+       https://newsletter.pragmaticengineer.com/p/how-to-get-unstuck-during-coding-interviews
+[2/23] ✓
+       https://medium.com/@danielasgharian/why-i-left-the-apple-ecosystem-after-14-years-and-what-i-switched-to-6f5bd276052e
+[3/23] ✓
+       https://newsletter.pragmaticengineer.com/p/the-pulse-143?r=1h65do&triedRedirect=true
+[4/23] ✓
+       https://osintteam.blog/15-linux-bash-one-liners-hackers-use-and-you-should-too-e5487159f232
+[5/23] ✓
+       https://www.locksmithkeyless.com/products/original-lishi-residential-bundle-with-kw1-kw5-sc1-sc4
+[6/23] ⊘   (already in Pinboard)
+       https://www.opensourceprojects.dev/post/1966252912759501136
+[8/23] ✓
+       https://www.reddit.com/r/networking/comments/1o6f7nt/concerned_50_year_old_engineer/
+[9/23] ✓
+       https://charity.wtf/2024/01/05/questionable-advice-my-boss-says-we-dont-need-any-engineering-managers-is-he-right/
+[10/23] ✓
+       https://medium.com/@osomudeyazudonu/12-devops-skills-that-will-command-200k-in-2026-88a58eb82a2f
+[11/23] ✓
+       https://newsletter.pragmaticengineer.com/p/the-pulse-aws-takes-down-a-good-part?r=1h65do&triedRedirect=true
+[12/23] ✓
+       https://developers.google.com/optimization
+[13/23] ✓
+       https://medium.com/spacelift/ci-cd-best-practices-top-11-tips-for-successful-pipelines-a6f67d33bd01
+[14/23] ✓
+       https://levelup.gitconnected.com/12-cli-tools-that-will-supercharge-your-developer-workflow-a9227b1659f4
+[15/23] ⊘   (already in Pinboard)
+       https://github.com/WerWolv/ImHex/tree/master
+[16/23] ✓
+       https://aws.plainenglish.io/the-aws-era-is-ending-devops-is-going-cloud-agnostic-598223093d49
+[17/23] ✓
+       https://blog.stackademic.com/aws-just-fired-14-000-california-software-engineers-the-real-reason-will-shock-you-029db815e20f
+[18/23] ✓
+       https://dronedj.com/2025/11/24/11-dji-black-friday-deals-happening-right-now/
+[19/23] ✓
+       https://venturebeat.com/ai/quilters-ai-just-designed-an-843-part-linux-computer-that-booted-on-the
+[20/23] ✓
+       https://medium.com/the-software-journal/if-you-use-git-daily-googles-jujutsu-jj-might-change-everything-abd9e31cb1bc
+[21/23] ✓
+       https://medium.com/@Smyekh/your-terminal-is-boring-lets-fix-it-with-these-rust-cli-tools-03069693a2d1
+[22/23] ✓
+       https://www.reddit.com/r/kubernetes/comments/1pr3kha/introducing_jdd_a_time_machine_for_your_json/
+[23/23] ✓
+       https://replit.com/
+
+Done. Added: 20  Skipped: 2  Failed: 1
+ 20:19:57 ▶[685]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --close-tabs --no-reload
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 63 tab(s) in window 1.
+Filtered 34 non-HTTP/S tabs.
+Skipping x.com: https://x.com/GergelyOrosz/status/1953778408816566529
+Skipping x.com: https://x.com/ID_AA_Carmack/status/1986844783457800606
+Skipping x.com: https://x.com/GergelyOrosz/status/1992271230393892997
+Skipping x.com: https://x.com/GergelyOrosz/status/1992677428272173266
+Skipping x.com: https://x.com/phoronix/status/1993128847337046285
+Skipping x.com: https://x.com/GergelyOrosz/status/1993426949104865428
+Skipped 6 filtered domain(s).
+Using cached bookmarks (1.5h old, 47040 bookmarks).
+Closing 23 tab(s)...
+Closing 23 tab(s) in window 1...
+Closed 0 tab(s)
+Processing 23 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/23] ✓
+       https://newsletter.pragmaticengineer.com/p/how-to-get-unstuck-during-coding-interviews
+[2/23] ✓
+       https://medium.com/@danielasgharian/why-i-left-the-apple-ecosystem-after-14-years-and-what-i-switched-to-6f5bd276052e
+[3/23] ✓
+       https://newsletter.pragmaticengineer.com/p/the-pulse-143?r=1h65do&triedRedirect=true
+[4/23] ✓
+       https://osintteam.blog/15-linux-bash-one-liners-hackers-use-and-you-should-too-e5487159f232
+[5/23] ✓
+       https://www.locksmithkeyless.com/products/original-lishi-residential-bundle-with-kw1-kw5-sc1-sc4
+[6/23] ⊘   (already in Pinboard)
+       https://www.opensourceprojects.dev/post/1966252912759501136
+[7/23] ✓
+       https://medium.com/@bornaly/the-one-linux-security-habit-that-exposes-you-and-how-i-fixed-it-7ad94ee1d4b1
+[8/23] ✓
+       https://www.reddit.com/r/networking/comments/1o6f7nt/concerned_50_year_old_engineer/
+[9/23] ✓
+       https://charity.wtf/2024/01/05/questionable-advice-my-boss-says-we-dont-need-any-engineering-managers-is-he-right/
+[10/23] ✓
+       https://medium.com/@osomudeyazudonu/12-devops-skills-that-will-command-200k-in-2026-88a58eb82a2f
+[11/23] ✓
+       https://newsletter.pragmaticengineer.com/p/the-pulse-aws-takes-down-a-good-part?r=1h65do&triedRedirect=true
+[12/23] ✓
+       https://developers.google.com/optimization
+[13/23] ✓
+       https://medium.com/spacelift/ci-cd-best-practices-top-11-tips-for-successful-pipelines-a6f67d33bd01
+[14/23] ✓
+       https://levelup.gitconnected.com/12-cli-tools-that-will-supercharge-your-developer-workflow-a9227b1659f4
+[15/23] ⊘   (already in Pinboard)
+       https://github.com/WerWolv/ImHex/tree/master
+[16/23] ✓
+       https://aws.plainenglish.io/the-aws-era-is-ending-devops-is-going-cloud-agnostic-598223093d49
+[17/23] ✓
+       https://blog.stackademic.com/aws-just-fired-14-000-california-software-engineers-the-real-reason-will-shock-you-029db815e20f
+[18/23] ✓
+       https://dronedj.com/2025/11/24/11-dji-black-friday-deals-happening-right-now/
+[19/23] ✓
+       https://venturebeat.com/ai/quilters-ai-just-designed-an-843-part-linux-computer-that-booted-on-the
+[20/23] ✓
+       https://medium.com/the-software-journal/if-you-use-git-daily-googles-jujutsu-jj-might-change-everything-abd9e31cb1bc
+[21/23] ✓
+       https://medium.com/@Smyekh/your-terminal-is-boring-lets-fix-it-with-these-rust-cli-tools-03069693a2d1
+[22/23] ✓
+       https://www.reddit.com/r/kubernetes/comments/1pr3kha/introducing_jdd_a_time_machine_for_your_json/
+[23/23] ✓
+       https://replit.com/
+
+Done. Added: 21  Skipped: 2  Failed: 0
+ 20:21:38 ▶[686]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --close-tabs --no-reload
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 63 tab(s) in window 1.
+Filtered 34 non-HTTP/S tabs.
+Skipping x.com: https://x.com/GergelyOrosz/status/1953778408816566529
+Skipping x.com: https://x.com/ID_AA_Carmack/status/1986844783457800606
+Skipping x.com: https://x.com/GergelyOrosz/status/1992271230393892997
+Skipping x.com: https://x.com/GergelyOrosz/status/1992677428272173266
+Skipping x.com: https://x.com/phoronix/status/1993128847337046285
+Skipping x.com: https://x.com/GergelyOrosz/status/1993426949104865428
+Skipped 6 filtered domain(s).
+Using cached bookmarks (1.7h old, 47040 bookmarks).
+[7/23] ✗  https://medium.com/@bornaly/the-one-linux-security-habit-that-exposes-you-and-how-i-fixed-it-7ad94ee1d4b1
+       socket hang up
+Closing 22 tab(s)...
+Closing 22 tab(s) in window 1...
+Closed 22 tab(s)
+Processing 23 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/23] ✓
+       https://newsletter.pragmaticengineer.com/p/how-to-get-unstuck-during-coding-interviews
+[2/23] ✓
+       https://medium.com/@danielasgharian/why-i-left-the-apple-ecosystem-after-14-years-and-what-i-switched-to-6f5bd276052e
+[3/23] ✓
+       https://newsletter.pragmaticengineer.com/p/the-pulse-143?r=1h65do&triedRedirect=true
+[4/23] ✓
+       https://osintteam.blog/15-linux-bash-one-liners-hackers-use-and-you-should-too-e5487159f232
+[5/23] ✓
+       https://www.locksmithkeyless.com/products/original-lishi-residential-bundle-with-kw1-kw5-sc1-sc4
+[6/23] ⊘   (already in Pinboard)
+       https://www.opensourceprojects.dev/post/1966252912759501136
+[8/23] ✓
+       https://www.reddit.com/r/networking/comments/1o6f7nt/concerned_50_year_old_engineer/
+[9/23] ✓
+       https://charity.wtf/2024/01/05/questionable-advice-my-boss-says-we-dont-need-any-engineering-managers-is-he-right/
+[10/23] ✓
+       https://medium.com/@osomudeyazudonu/12-devops-skills-that-will-command-200k-in-2026-88a58eb82a2f
+[11/23] ✓
+       https://newsletter.pragmaticengineer.com/p/the-pulse-aws-takes-down-a-good-part?r=1h65do&triedRedirect=true
+[12/23] ✓
+       https://developers.google.com/optimization
+[13/23] ✓
+       https://medium.com/spacelift/ci-cd-best-practices-top-11-tips-for-successful-pipelines-a6f67d33bd01
+[14/23] ✓
+       https://levelup.gitconnected.com/12-cli-tools-that-will-supercharge-your-developer-workflow-a9227b1659f4
+[15/23] ⊘   (already in Pinboard)
+       https://github.com/WerWolv/ImHex/tree/master
+[16/23] ✓
+       https://aws.plainenglish.io/the-aws-era-is-ending-devops-is-going-cloud-agnostic-598223093d49
+[17/23] ✓
+       https://blog.stackademic.com/aws-just-fired-14-000-california-software-engineers-the-real-reason-will-shock-you-029db815e20f
+[18/23] ✓
+       https://dronedj.com/2025/11/24/11-dji-black-friday-deals-happening-right-now/
+[19/23] ✓
+       https://venturebeat.com/ai/quilters-ai-just-designed-an-843-part-linux-computer-that-booted-on-the
+[20/23] ✓
+       https://medium.com/the-software-journal/if-you-use-git-daily-googles-jujutsu-jj-might-change-everything-abd9e31cb1bc
+[21/23] ✓
+       https://medium.com/@Smyekh/your-terminal-is-boring-lets-fix-it-with-these-rust-cli-tools-03069693a2d1
+[22/23] ✓
+       https://www.reddit.com/r/kubernetes/comments/1pr3kha/introducing_jdd_a_time_machine_for_your_json/
+[23/23] ✓
+       https://replit.com/
+
+Done. Added: 20  Skipped: 2  Failed: 1
+ 20:29:14 ▶[687]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --close-tabs --no-reload
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 41 tab(s) in window 1.
+Filtered 33 non-HTTP/S tabs.
+Skipping x.com: https://x.com/GergelyOrosz/status/1953778408816566529
+Skipping x.com: https://x.com/ID_AA_Carmack/status/1986844783457800606
+Skipping x.com: https://x.com/GergelyOrosz/status/1992271230393892997
+Skipping x.com: https://x.com/GergelyOrosz/status/1992677428272173266
+Skipping x.com: https://x.com/phoronix/status/1993128847337046285
+Skipping x.com: https://x.com/GergelyOrosz/status/1993426949104865428
+Skipped 6 filtered domain(s).
+Using cached bookmarks (1.7h old, 47040 bookmarks).
+Closing 2 tab(s)...
+Closing 2 tab(s) in window 1...
+Closed 2 tab(s)
+Processing 2 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/2] ✓
+       https://medium.com/@bornaly/the-one-linux-security-habit-that-exposes-you-and-how-i-fixed-it-7ad94ee1d4b1
+[2/2] ⊘   (already in Pinboard)
+       https://blog.stackademic.com/13-underrated-github-repos-that-deserve-10x-more-stars-8dafc9bcc627
+
+Done. Added: 1  Skipped: 1  Failed: 0
+ 20:29:37 ▶[688]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe
+Reading tabs from Chrome window 1 ...
+Activating and reloading all tabs in window 1 to wake suspended tabs...
+Waiting for pages to load...
+Extracting URLs...
+Found 39 tab(s) in window 1.
+Filtered 11 non-HTTP/S tabs.
+Skipping x.com: https://x.com/GergelyOrosz/status/1953778408816566529
+Skipping www.google.com: https://www.google.com/search?q=www.freedownloadmanager.org%
+Skipping x.com: https://x.com/GergelyOrosz/status/1985459456386224314
+Skipping x.com: https://x.com/ID_AA_Carmack/status/1986844783457800606
+Skipping x.com: https://x.com/GergelyOrosz/status/1991973366354600175
+Skipping x.com: https://x.com/GergelyOrosz/status/1992271230393892997
+Skipping x.com: https://x.com/GergelyOrosz/status/1992677428272173266
+Skipping x.com: https://x.com/phoronix/status/1993128847337046285
+Skipping x.com: https://x.com/GergelyOrosz/status/1993426949104865428
+Skipping x.com: https://x.com/GergelyOrosz/status/1997947567108497433
+Skipped 10 filtered domain(s).
+Using cached bookmarks (1.7h old, 47040 bookmarks).
+[14/18] ✗  https://newsletter.pragmaticengineer.com/p/copy-holiday-gift-ideas-for-techies-2025?r=1h65do&triedRedirect=true
+       socket hang up
+Processing 18 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/18] ⊘   (already in Pinboard)
+       https://www.wired.com/story/for-algorithms-a-little-memory-outweighs-a-lot-of-time/
+[2/18] ✓
+       https://www.redteamtools.com/Lishi-2-in-1-KW5-6-Pin-Kwikset-Keyway-Pick-and-Decoder
+[3/18] ✓
+       https://www.southernliving.com/seagrove-nc-11805938
+[4/18] ✓
+       https://www.reddit.com/r/sre/comments/1nlef9l/netflix_just_shared_how_they_democratized/
+[5/18] ✓
+       https://newsletter.pragmaticengineer.com/p/googles-engineering-culture?r=1h65do&triedRedirect=true
+[6/18] ✓
+       https://medium.com/@elliotgraebert/wait-since-when-did-datadog-replace-pagerduty-5f6a4256f837
+[7/18] ✓
+       https://generativeai.pub/stanford-just-killed-prompt-engineering-with-8-words-and-i-cant-believe-it-worked-8349d6524d2b?gi=168c6d0ee94e
+[8/18] ✓
+       https://charity.wtf/2025/10/30/the-pillar-is-a-lie/
+[9/18] ✓
+       https://blog.stackademic.com/whats-the-difference-between-localhost-and-127-0-0-1-4102ba05d494
+[10/18] ✓
+       https://javascript.plainenglish.io/my-favorite-1-tools-that-make-me-10x-more-productive-as-a-developer-fa591d6a4056?gi=d0282cd07912
+[11/18] ✓
+       https://medium.com/medialesson/json-vs-toon-a-new-era-of-structured-input-19cbb7fc552b
+[12/18] ✓
+       https://substack.com/@pragmaticengineer/note/p-178618026?r=1h65do
+[13/18] ✓
+       https://www.androidpolice.com/android-keyboard-shortcut-i-use-every-single-day/
+[15/18] ✓
+       https://www.xda-developers.com/wish-knew-about-free-vector-tool-before-spent-years-learning-illustrator/
+[16/18] ✓
+       https://medium.com/macoclock/10-super-niche-mac-apps-that-completely-transformed-my-mac-ee0671c693bc
+[17/18] ✓
+       https://blog.stackademic.com/12-niche-developer-tools-you-didnt-know-existed-b726bd495d9a
+[18/18] ✓
+       https://tlzdigital.com/application?code=TLZXMAS25
+
+Done. Added: 16  Skipped: 1  Failed: 1
+ 20:33:05 ▶[689]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe
+Reading tabs from Chrome window 1 ...
+Activating and reloading all tabs in window 1 to wake suspended tabs...
+Waiting for pages to load...
+Extracting URLs...
+Found 34 tab(s) in window 1.
+Filtered 31 non-HTTP/S tabs.
+Skipping x.com: https://x.com/RodmanAi/status/2033143653183668732
+Skipped 1 filtered domain(s).
+Using cached bookmarks (1.8h old, 47040 bookmarks).
+Processing 2 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/2] ✓
+       https://www.youtube.com/watch?v=E5B0cS6XRkg
+[2/2] ✓
+       https://www.reddit.com/r/jellyfin/comments/13y003v/praise_post_synfonium_is_awesome_music_app_for/
+
+Done. Added: 2  Skipped: 0  Failed: 0
+ 20:36:14 ▶[690]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe
+Reading tabs from Chrome window 1 ...
+Activating and reloading all tabs in window 1 to wake suspended tabs...
+Waiting for pages to load...
+Extracting URLs...
+Found 39 tab(s) in window 1.
+Filtered 2 non-HTTP/S tabs.
+Skipping x.com: https://x.com/GergelyOrosz/status/1953778408816566529
+Skipping www.google.com: https://www.google.com/search?q=www.freedownloadmanager.org%
+Skipping x.com: https://x.com/GergelyOrosz/status/1967273235894194339
+Skipping x.com: https://x.com/GergelyOrosz/status/1985459456386224314
+Skipping x.com: https://x.com/ID_AA_Carmack/status/1986844783457800606
+Skipping x.com: https://x.com/GergelyOrosz/status/1988715037171806209
+Skipping x.com: https://x.com/GergelyOrosz/status/1991973366354600175
+Skipping x.com: https://x.com/GergelyOrosz/status/1992271230393892997
+Skipping x.com: https://x.com/GergelyOrosz/status/1992677428272173266
+Skipping x.com: https://x.com/phoronix/status/1993128847337046285
+Skipping x.com: https://x.com/GergelyOrosz/status/1993426949104865428
+Skipping x.com: https://x.com/GergelyOrosz/status/1997947567108497433
+Skipped 12 filtered domain(s).
+Using cached bookmarks (2.1h old, 47040 bookmarks).
+[7/25] ✗  https://medium.com/@elliotgraebert/wait-since-when-did-datadog-replace-pagerduty-5f6a4256f837
+       socket hang up
+[12/25] ✗  https://techcrunch.com/2025/11/02/kevin-roses-simple-test-for-ai-hardware-would-you-want-to-punch-someone-in-the-face-whos-wearing-it/
+       socket hang up
+
+Processing 25 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/25] ⊘   (already in Pinboard)
+       https://www.wired.com/story/for-algorithms-a-little-memory-outweighs-a-lot-of-time/
+[2/25] ✓
+       https://www.redteamtools.com/Lishi-2-in-1-KW5-6-Pin-Kwikset-Keyway-Pick-and-Decoder
+[3/25] ✓
+       https://www.southernliving.com/seagrove-nc-11805938
+[4/25] ✓
+       https://blog.akshaykhale.com/terminal-setup-like-a-senior-dev-f282542478da
+[5/25] ✓
+       https://www.reddit.com/r/sre/comments/1nlef9l/netflix_just_shared_how_they_democratized/
+[6/25] ✓
+       https://newsletter.pragmaticengineer.com/p/googles-engineering-culture?r=1h65do&triedRedirect=true
+[8/25] ✓
+       https://www.phoronix.com/review/cache-aware-scheduling-amd-turin
+[9/25] ✓
+       https://blog.stackademic.com/10-niche-developer-tools-you-didnt-know-existed-5620e2075fd3
+[10/25] ✓
+       https://generativeai.pub/stanford-just-killed-prompt-engineering-with-8-words-and-i-cant-believe-it-worked-8349d6524d2b
+[11/25] ✓
+       https://charity.wtf/2025/10/30/the-pillar-is-a-lie/
+[13/25] ✓
+       https://blog.stackademic.com/whats-the-difference-between-localhost-and-127-0-0-1-4102ba05d494
+[14/25] ✓
+       https://javascript.plainenglish.io/my-favorite-1-tools-that-make-me-10x-more-productive-as-a-developer-fa591d6a4056
+[15/25] ⊘   (already in Pinboard)
+       https://newsletter.pragmaticengineer.com/p/the-software-engineers-guidebook?r=1h65do&triedRedirect=true
+[16/25] ✓
+       https://medium.com/medialesson/json-vs-toon-a-new-era-of-structured-input-19cbb7fc552b
+[17/25] ✓
+       https://substack.com/@pragmaticengineer/note/p-178618026?r=1h65do
+[18/25] ✓
+       https://www.androidpolice.com/android-keyboard-shortcut-i-use-every-single-day/
+[19/25] ✓
+       https://newsletter.pragmaticengineer.com/p/copy-holiday-gift-ideas-for-techies-2025?r=1h65do&triedRedirect=true
+[20/25] ✓
+       https://towardsdatascience.com/i-cleaned-a-messy-csv-file-using-pandas-heres-the-exact-process-i-follow-every-time/
+[21/25] ✓
+       https://www.xda-developers.com/wish-knew-about-free-vector-tool-before-spent-years-learning-illustrator/
+[22/25] ✓
+       https://medium.com/macoclock/10-super-niche-mac-apps-that-completely-transformed-my-mac-ee0671c693bc
+[23/25] ✓
+       https://scitechdaily.com/the-1950s-material-making-a-massive-comeback-to-transform-modern-computing/
+[24/25] ✓
+       https://blog.stackademic.com/12-niche-developer-tools-you-didnt-know-existed-b726bd495d9a
+[25/25] ✓
+       https://tlzdigital.com/application?code=TLZXMAS25
+
+Done. Added: 21  Skipped: 2  Failed: 2
+ 20:55:27 ▶[691]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶
+ 20:55:27 ▶[691]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --close-tabs --no-reload
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 39 tab(s) in window 1.
+Skipping x.com: https://x.com/GergelyOrosz/status/1953778408816566529
+Skipping www.google.com: https://www.google.com/search?q=www.freedownloadmanager.org%
+Skipping x.com: https://x.com/GergelyOrosz/status/1967273235894194339
+Skipping x.com: https://x.com/ABC/status/1969775203115770172
+Skipping x.com: https://x.com/GergelyOrosz/status/1985459456386224314
+Skipping x.com: https://x.com/ID_AA_Carmack/status/1986844783457800606
+Skipping x.com: https://x.com/GergelyOrosz/status/1988715037171806209
+Skipping x.com: https://x.com/GergelyOrosz/status/1991973366354600175
+Skipping x.com: https://x.com/GergelyOrosz/status/1992271230393892997
+Skipping x.com: https://x.com/GergelyOrosz/status/1992677428272173266
+Skipping x.com: https://x.com/PhysInHistory/status/1992908298291696066
+Skipping x.com: https://x.com/phoronix/status/1993128847337046285
+Skipping x.com: https://x.com/GergelyOrosz/status/1993426949104865428
+Skipping x.com: https://x.com/GergelyOrosz/status/1997947567108497433
+Skipped 14 filtered domain(s).
+Using cached bookmarks (2.1h old, 47040 bookmarks).
+Closing 25 tab(s)...
+Closing 25 tab(s) in window 1...
+Closed 25 tab(s)
+Processing 25 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/25] ⊘   (already in Pinboard)
+       https://www.wired.com/story/for-algorithms-a-little-memory-outweighs-a-lot-of-time/
+[2/25] ✓
+       https://www.redteamtools.com/Lishi-2-in-1-KW5-6-Pin-Kwikset-Keyway-Pick-and-Decoder
+[3/25] ✓
+       https://www.southernliving.com/seagrove-nc-11805938
+[4/25] ✓
+       https://blog.akshaykhale.com/terminal-setup-like-a-senior-dev-f282542478da
+[5/25] ✓
+       https://www.reddit.com/r/sre/comments/1nlef9l/netflix_just_shared_how_they_democratized/
+[6/25] ✓
+       https://newsletter.pragmaticengineer.com/p/googles-engineering-culture?r=1h65do&triedRedirect=true
+[7/25] ✓
+       https://medium.com/@elliotgraebert/wait-since-when-did-datadog-replace-pagerduty-5f6a4256f837
+[8/25] ✓
+       https://www.phoronix.com/review/cache-aware-scheduling-amd-turin
+[9/25] ✓
+       https://blog.stackademic.com/10-niche-developer-tools-you-didnt-know-existed-5620e2075fd3
+[10/25] ✓
+       https://generativeai.pub/stanford-just-killed-prompt-engineering-with-8-words-and-i-cant-believe-it-worked-8349d6524d2b
+[11/25] ✓
+       https://charity.wtf/2025/10/30/the-pillar-is-a-lie/
+[12/25] ✓
+       https://techcrunch.com/2025/11/02/kevin-roses-simple-test-for-ai-hardware-would-you-want-to-punch-someone-in-the-face-whos-wearing-it/
+[13/25] ✓
+       https://blog.stackademic.com/whats-the-difference-between-localhost-and-127-0-0-1-4102ba05d494
+[14/25] ✓
+       https://javascript.plainenglish.io/my-favorite-1-tools-that-make-me-10x-more-productive-as-a-developer-fa591d6a4056
+[15/25] ⊘   (already in Pinboard)
+       https://newsletter.pragmaticengineer.com/p/the-software-engineers-guidebook?r=1h65do&triedRedirect=true
+[16/25] ✓
+       https://medium.com/medialesson/json-vs-toon-a-new-era-of-structured-input-19cbb7fc552b
+[17/25] ✓
+       https://substack.com/@pragmaticengineer/note/p-178618026?r=1h65do
+[18/25] ✓
+       https://www.androidpolice.com/android-keyboard-shortcut-i-use-every-single-day/
+[19/25] ✓
+       https://newsletter.pragmaticengineer.com/p/copy-holiday-gift-ideas-for-techies-2025?r=1h65do&triedRedirect=true
+[20/25] ✓
+       https://towardsdatascience.com/i-cleaned-a-messy-csv-file-using-pandas-heres-the-exact-process-i-follow-every-time/
+[21/25] ✓
+       https://www.xda-developers.com/wish-knew-about-free-vector-tool-before-spent-years-learning-illustrator/
+[22/25] ✓
+       https://medium.com/macoclock/10-super-niche-mac-apps-that-completely-transformed-my-mac-ee0671c693bc
+[23/25] ✓
+       https://scitechdaily.com/the-1950s-material-making-a-massive-comeback-to-transform-modern-computing/
+[24/25] ✓
+       https://blog.stackademic.com/12-niche-developer-tools-you-didnt-know-existed-b726bd495d9a
+[25/25] ✓
+       https://tlzdigital.com/application?code=TLZXMAS25
+
+Done. Added: 23  Skipped: 2  Failed: 0
+ 20:57:10 ▶[692]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --close-tabs --no-reload
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 14 tab(s) in window 1.
+Skipping x.com: https://x.com/GergelyOrosz/status/1953778408816566529
+Skipping www.google.com: https://www.google.com/search?q=www.freedownloadmanager.org%
+Skipping x.com: https://x.com/GergelyOrosz/status/1967273235894194339
+Skipping x.com: https://x.com/ABC/status/1969775203115770172
+Skipping x.com: https://x.com/GergelyOrosz/status/1985459456386224314
+Skipping x.com: https://x.com/ID_AA_Carmack/status/1986844783457800606
+Skipping x.com: https://x.com/GergelyOrosz/status/1988715037171806209
+Skipping x.com: https://x.com/GergelyOrosz/status/1991973366354600175
+Skipping x.com: https://x.com/GergelyOrosz/status/1992271230393892997
+Skipping x.com: https://x.com/GergelyOrosz/status/1992677428272173266
+Skipping x.com: https://x.com/PhysInHistory/status/1992908298291696066
+Skipping x.com: https://x.com/phoronix/status/1993128847337046285
+Skipping x.com: https://x.com/GergelyOrosz/status/1993426949104865428
+Skipping x.com: https://x.com/GergelyOrosz/status/1997947567108497433
+Skipped 14 filtered domain(s).
+Using cached bookmarks (2.2h old, 47040 bookmarks).
+Processing 0 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+
+Done. Added: 0  Skipped: 0  Failed: 0
+ 21:02:22 ▶[693]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe
+Reading tabs from Chrome window 1 ...
+Activating and reloading all tabs in window 1 to wake suspended tabs...
+Waiting for pages to load...
+Extracting URLs...
+Found 41 tab(s) in window 1.
+Filtered 40 non-HTTP/S tabs.
+Skipped 0 filtered domain(s).
+Using cached bookmarks (2.3h old, 47040 bookmarks).
+Processing 1 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/1] ✓
+       https://www.reddit.com/r/selfhosted/comments/1preqxc/there_is_a_limit_to_selfhosting/
+
+Done. Added: 1  Skipped: 0  Failed: 0
+ 21:04:14 ▶[694]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe
+Reading tabs from Chrome window 1 ...
+Activating and reloading all tabs in window 1 to wake suspended tabs...
+Waiting for pages to load...
+Extracting URLs...
+Found 34 tab(s) in window 1.
+Filtered 7 non-HTTP/S tabs.
+Skipped 0 filtered domain(s).
+Using cached bookmarks (2.3h old, 47040 bookmarks).
+[8/26] ✗  https://www.forbes.com/sites/traversmark/2025/11/24/a-psychologist-explains-the-ben-franklin-effect---how-to-make-others-like-you/
+       socket hang up
+
+Processing 26 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/26] ✓
+       https://www.facebook.com/reel/1348930246923812
+[2/26] ✓
+       https://www.facebook.com/reel/1156453436260225
+[3/26] ✓
+       https://www.facebook.com/reel/1916315168976882
+[4/26] ✓
+       https://www.facebook.com/reel/1357747555763266
+[5/26] ✓
+       https://www.facebook.com/watch/?v=782604394833600
+[6/26] ✓
+       https://www.sciencealert.com/tinnitus-is-somehow-linked-to-a-crucial-bodily-function
+[7/26] ✓
+       https://www.silhouette.com/us/us/optical-eyewear/titan-dynamics-contour/jf/7110
+[9/26] ✓
+       https://www.inc.com/fast-company-2/how-to-transform-burnout-to-breakthrough/91270184
+[10/26] ✓
+       https://www.fastcompany.com/91461427/science-says-super-achievers-dont-set-avoidance-goals-heres-why-successful-people-set-approach-goals
+[11/26] ✓
+       https://www.thespruce.com/pro-trick-for-faster-painting-11886326
+[12/26] ✓
+       https://www.familyhandyman.com/list/56-brilliant-woodworking-tips-for-beginners/?link_source=ta_first_comment&taid=6921ec2fe12c460001bb62c1
+[13/26] ✓
+       https://www.visualcapitalist.com/top-50-economies-by-gdp-in-2025/
+[14/26] ✓
+       https://www.sciencealert.com/5-early-speech-related-signs-youre-at-risk-of-alzheimers
+[15/26] ✓
+       https://www.sciencealert.com/a-signal-hidden-in-the-brain-may-reveal-alzheimers-years-in-advance
+[16/26] ✓
+       https://www.medicalnewstoday.com/articles/3-diet-types-mediterranean-may-help-reduce-chronic-disease-dementia-diabetes-older-adults-aging
+[17/26] ✓
+       https://bigthink.com/business/the-importance-of-intuition-and-the-limits-of-rationalism/
+[18/26] ✓
+       https://www.inc.com/bill-murphy-jr/harvard-research-says-great-leaders-do-3-simple-things-to-motivate-the-best-employees/91234252
+[19/26] ✓
+       https://www.inc.com/fast-company-2/setting-boundaries-makes-you-more-valuable-at-work-leadership-executive-coach/91234034
+[20/26] ✓
+       https://medium.com/blog/drawing-as-a-way-of-learning-8ae1f4624b53
+[21/26] ⊘   (already in Pinboard)
+       https://www.forbes.com/sites/dianehamilton/2025/05/02/how-to-master-prioritization-at-work-when-everything-feels-urgent/
+[22/26] ✓
+       https://myforestfoods.com/
+[23/26] ⊘   (already in Pinboard)
+       https://www.youtube.com/watch?v=dGlIIid_Pz4
+[24/26] ✓
+       https://www.inc.com/jeff-haden/science-says-stop-asking-will-this-make-me-happy-and-start-asking-yourself-this-instead/91241029
+[25/26] ✓
+       https://www.fastcompany.com/90684362/the-office-has-changed-forever-how-you-onboard-employees-must-also-change
+[26/26] ✓
+       https://post.substack.com/p/our-lives-are-precarious-and-precious?r=1h65do
+
+Done. Added: 23  Skipped: 2  Failed: 1
+ 21:09:11 ▶[695]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶
+ 21:09:11 ▶[695]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --close-tabs --no-reload
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 34 tab(s) in window 1.
+Filtered 1 non-HTTP/S tabs.
+Skipped 0 filtered domain(s).
+Using cached bookmarks (2.4h old, 47040 bookmarks).
+Closing 32 tab(s)...
+Closing 32 tab(s) in window 1...
+Closed 0 tab(s)
+Processing 32 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/32] ✓
+       https://www.facebook.com/reel/1348930246923812
+[2/32] ✓
+       https://www.facebook.com/reel/1156453436260225
+[3/32] ✓
+       https://www.facebook.com/reel/1916315168976882
+[4/32] ✓
+       https://www.facebook.com/reel/1357747555763266
+[5/32] ✓
+       https://www.facebook.com/watch/?v=782604394833600
+[6/32] ✓
+       https://www.facebook.com/reel/700946526395324
+[7/32] ✓
+       https://www.independent.co.uk/health-and-fitness/exercise-more-effective-walking-heart-health-b2886405.html
+[8/32] ✓
+       https://www.sciencealert.com/tinnitus-is-somehow-linked-to-a-crucial-bodily-function
+[9/32] ✓
+       https://www.silhouette.com/us/us/optical-eyewear
+[10/32] ✓
+       https://www.silhouette.com/us/us/optical-eyewear/titan-dynamics-contour/jf/7110
+[11/32] ✓
+       https://www.forbes.com/sites/traversmark/2025/11/24/a-psychologist-explains-the-ben-franklin-effect---how-to-make-others-like-you/
+[12/32] ✓
+       https://www.inc.com/fast-company-2/how-to-transform-burnout-to-breakthrough/91270184
+[13/32] ✓
+       https://www.fastcompany.com/91461427/science-says-super-achievers-dont-set-avoidance-goals-heres-why-successful-people-set-approach-goals
+[14/32] ✓
+       https://www.thespruce.com/pro-trick-for-faster-painting-11886326
+[15/32] ✓
+       https://www.familyhandyman.com/list/56-brilliant-woodworking-tips-for-beginners/?link_source=ta_first_comment&taid=6921ec2fe12c460001bb62c1
+[16/32] ✓
+       https://www.visualcapitalist.com/top-50-economies-by-gdp-in-2025/
+[17/32] ✓
+       https://www.sciencealert.com/5-early-speech-related-signs-youre-at-risk-of-alzheimers
+[18/32] ✓
+       https://www.sciencealert.com/a-signal-hidden-in-the-brain-may-reveal-alzheimers-years-in-advance
+[19/32] ✓
+       https://phys.org/news/2025-10-common-biases-debunks-happiness-age.html
+[20/32] ✓
+       https://www.theguardian.com/technology/2025/oct/18/are-we-living-in-a-golden-age-of-stupidity-technology
+[21/32] ✓
+       https://www.medicalnewstoday.com/articles/3-diet-types-mediterranean-may-help-reduce-chronic-disease-dementia-diabetes-older-adults-aging
+[22/32] ✓
+       https://bigthink.com/business/the-importance-of-intuition-and-the-limits-of-rationalism/
+[23/32] ✓
+       https://www.inc.com/bill-murphy-jr/harvard-research-says-great-leaders-do-3-simple-things-to-motivate-the-best-employees/91234252
+[24/32] ✓
+       https://www.inc.com/fast-company-2/setting-boundaries-makes-you-more-valuable-at-work-leadership-executive-coach/91234034
+[25/32] ✓
+       https://medium.com/blog/drawing-as-a-way-of-learning-8ae1f4624b53
+[26/32] ⊘   (already in Pinboard)
+       https://www.forbes.com/sites/dianehamilton/2025/05/02/how-to-master-prioritization-at-work-when-everything-feels-urgent/
+[27/32] ✓
+       https://myforestfoods.com/
+[28/32] ⊘   (already in Pinboard)
+       https://www.youtube.com/watch?v=dGlIIid_Pz4
+[29/32] ⊘   (already in Pinboard)
+       https://www.reddit.com/r/livesound/comments/1nlft6b/fascinating_monitor_engineer_video_and_a_few/
+[30/32] ✓
+       https://www.inc.com/jeff-haden/science-says-stop-asking-will-this-make-me-happy-and-start-asking-yourself-this-instead/91241029
+[31/32] ✓
+       https://www.fastcompany.com/90684362/the-office-has-changed-forever-how-you-onboard-employees-must-also-change
+[32/32] ✓
+       https://post.substack.com/p/our-lives-are-precarious-and-precious?r=1h65do
+
+Done. Added: 29  Skipped: 3  Failed: 0
+ 21:11:21 ▶[696]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --close-tabs --no-reload
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 34 tab(s) in window 1.
+Filtered 1 non-HTTP/S tabs.
+Skipped 0 filtered domain(s).
+Using cached bookmarks (2.4h old, 47040 bookmarks).
+
+Closing 32 tab(s)...
+Closing 32 tab(s) in window 1...
+Closed 0 tab(s)
+Processing 32 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/32] ✓
+       https://www.facebook.com/reel/1348930246923812
+[2/32] ✓
+       https://www.facebook.com/reel/1156453436260225
+[3/32] ✓
+       https://www.facebook.com/reel/1916315168976882
+[4/32] ✓
+       https://www.facebook.com/reel/1357747555763266
+[5/32] ✓
+       https://www.facebook.com/watch/?v=782604394833600
+[6/32] ✓
+       https://www.facebook.com/reel/700946526395324
+[7/32] ✓
+       https://www.independent.co.uk/health-and-fitness/exercise-more-effective-walking-heart-health-b2886405.html
+[8/32] ✓
+       https://www.sciencealert.com/tinnitus-is-somehow-linked-to-a-crucial-bodily-function
+[9/32] ✓
+       https://www.silhouette.com/us/us/optical-eyewear
+[10/32] ✓
+       https://www.silhouette.com/us/us/optical-eyewear/titan-dynamics-contour/jf/7110
+[11/32] ✓
+       https://www.forbes.com/sites/traversmark/2025/11/24/a-psychologist-explains-the-ben-franklin-effect---how-to-make-others-like-you/
+[12/32] ✓
+       https://www.inc.com/fast-company-2/how-to-transform-burnout-to-breakthrough/91270184
+[13/32] ✓
+       https://www.fastcompany.com/91461427/science-says-super-achievers-dont-set-avoidance-goals-heres-why-successful-people-set-approach-goals
+[14/32] ✓
+       https://www.thespruce.com/pro-trick-for-faster-painting-11886326
+[15/32] ✓
+       https://www.familyhandyman.com/list/56-brilliant-woodworking-tips-for-beginners/?link_source=ta_first_comment&taid=6921ec2fe12c460001bb62c1
+[16/32] ✓
+       https://www.visualcapitalist.com/top-50-economies-by-gdp-in-2025/
+[17/32] ✓
+       https://www.sciencealert.com/5-early-speech-related-signs-youre-at-risk-of-alzheimers
+[18/32] ✓
+       https://www.sciencealert.com/a-signal-hidden-in-the-brain-may-reveal-alzheimers-years-in-advance
+[19/32] ✓
+       https://phys.org/news/2025-10-common-biases-debunks-happiness-age.html
+[20/32] ✓
+       https://www.theguardian.com/technology/2025/oct/18/are-we-living-in-a-golden-age-of-stupidity-technology
+[21/32] ✓
+       https://www.medicalnewstoday.com/articles/3-diet-types-mediterranean-may-help-reduce-chronic-disease-dementia-diabetes-older-adults-aging
+[22/32] ✓
+       https://bigthink.com/business/the-importance-of-intuition-and-the-limits-of-rationalism/
+[23/32] ✓
+       https://www.inc.com/bill-murphy-jr/harvard-research-says-great-leaders-do-3-simple-things-to-motivate-the-best-employees/91234252
+[24/32] ✓
+       https://www.inc.com/fast-company-2/setting-boundaries-makes-you-more-valuable-at-work-leadership-executive-coach/91234034
+[25/32] ✓
+       https://medium.com/blog/drawing-as-a-way-of-learning-8ae1f4624b53
+[26/32] ⊘   (already in Pinboard)
+       https://www.forbes.com/sites/dianehamilton/2025/05/02/how-to-master-prioritization-at-work-when-everything-feels-urgent/
+[27/32] ✓
+       https://myforestfoods.com/
+[28/32] ⊘   (already in Pinboard)
+       https://www.youtube.com/watch?v=dGlIIid_Pz4
+[29/32] ⊘   (already in Pinboard)
+       https://www.reddit.com/r/livesound/comments/1nlft6b/fascinating_monitor_engineer_video_and_a_few/
+[30/32] ✓
+       https://www.inc.com/jeff-haden/science-says-stop-asking-will-this-make-me-happy-and-start-asking-yourself-this-instead/91241029
+[31/32] ✓
+       https://www.fastcompany.com/90684362/the-office-has-changed-forever-how-you-onboard-employees-must-also-change
+[32/32] ✓
+       https://post.substack.com/p/our-lives-are-precarious-and-precious?r=1h65do
+
+Done. Added: 29  Skipped: 3  Failed: 0
+ 21:13:54 ▶[697]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶
+ 21:13:54 ▶[697]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --close-tabs --no-reload
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 34 tab(s) in window 1.
+Filtered 1 non-HTTP/S tabs.
+Skipped 0 filtered domain(s).
+Using cached bookmarks (2.4h old, 47040 bookmarks).
+Closing 32 tab(s)...
+Closing 32 tab(s) in window 1...
+Closed 33 tab(s)
+Processing 32 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/32] ✓
+       https://www.facebook.com/reel/1348930246923812
+[2/32] ✓
+       https://www.facebook.com/reel/1156453436260225
+[3/32] ✓
+       https://www.facebook.com/reel/1916315168976882
+[4/32] ✓
+       https://www.facebook.com/reel/1357747555763266
+[5/32] ✓
+       https://www.facebook.com/watch/?v=782604394833600
+[6/32] ✓
+       https://www.facebook.com/reel/700946526395324
+[7/32] ✓
+       https://www.independent.co.uk/health-and-fitness/exercise-more-effective-walking-heart-health-b2886405.html
+[8/32] ✓
+       https://www.sciencealert.com/tinnitus-is-somehow-linked-to-a-crucial-bodily-function
+[9/32] ✓
+       https://www.silhouette.com/us/us/optical-eyewear
+[10/32] ✓
+       https://www.silhouette.com/us/us/optical-eyewear/titan-dynamics-contour/jf/7110
+[11/32] ✓
+       https://www.forbes.com/sites/traversmark/2025/11/24/a-psychologist-explains-the-ben-franklin-effect---how-to-make-others-like-you/
+[12/32] ✓
+       https://www.inc.com/fast-company-2/how-to-transform-burnout-to-breakthrough/91270184
+[13/32] ✓
+       https://www.fastcompany.com/91461427/science-says-super-achievers-dont-set-avoidance-goals-heres-why-successful-people-set-approach-goals
+[14/32] ✓
+       https://www.thespruce.com/pro-trick-for-faster-painting-11886326
+[15/32] ✓
+       https://www.familyhandyman.com/list/56-brilliant-woodworking-tips-for-beginners/?link_source=ta_first_comment&taid=6921ec2fe12c460001bb62c1
+[16/32] ✓
+       https://www.visualcapitalist.com/top-50-economies-by-gdp-in-2025/
+[17/32] ✓
+       https://www.sciencealert.com/5-early-speech-related-signs-youre-at-risk-of-alzheimers
+[18/32] ✓
+       https://www.sciencealert.com/a-signal-hidden-in-the-brain-may-reveal-alzheimers-years-in-advance
+[19/32] ✓
+       https://phys.org/news/2025-10-common-biases-debunks-happiness-age.html
+[20/32] ✓
+       https://www.theguardian.com/technology/2025/oct/18/are-we-living-in-a-golden-age-of-stupidity-technology
+[21/32] ✓
+       https://www.medicalnewstoday.com/articles/3-diet-types-mediterranean-may-help-reduce-chronic-disease-dementia-diabetes-older-adults-aging
+[22/32] ✓
+       https://bigthink.com/business/the-importance-of-intuition-and-the-limits-of-rationalism/
+[23/32] ✓
+       https://www.inc.com/bill-murphy-jr/harvard-research-says-great-leaders-do-3-simple-things-to-motivate-the-best-employees/91234252
+[24/32] ✓
+       https://www.inc.com/fast-company-2/setting-boundaries-makes-you-more-valuable-at-work-leadership-executive-coach/91234034
+[25/32] ✓
+       https://medium.com/blog/drawing-as-a-way-of-learning-8ae1f4624b53
+[26/32] ⊘   (already in Pinboard)
+       https://www.forbes.com/sites/dianehamilton/2025/05/02/how-to-master-prioritization-at-work-when-everything-feels-urgent/
+[27/32] ✓
+       https://myforestfoods.com/
+[28/32] ⊘   (already in Pinboard)
+       https://www.youtube.com/watch?v=dGlIIid_Pz4
+[29/32] ⊘   (already in Pinboard)
+       https://www.reddit.com/r/livesound/comments/1nlft6b/fascinating_monitor_engineer_video_and_a_few/
+[30/32] ✓
+       https://www.inc.com/jeff-haden/science-says-stop-asking-will-this-make-me-happy-and-start-asking-yourself-this-instead/91241029
+[31/32] ✓
+       https://www.fastcompany.com/90684362/the-office-has-changed-forever-how-you-onboard-employees-must-also-change
+[32/32] ✓
+       https://post.substack.com/p/our-lives-are-precarious-and-precious?r=1h65do
+
+Done. Added: 29  Skipped: 3  Failed: 0
+ 21:16:12 ▶[698]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --close-tabs --no-reload
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 1 tab(s) in window 1.
+Skipped 0 filtered domain(s).
+Using cached bookmarks (2.5h old, 47040 bookmarks).
+Closing 1 tab(s)...
+Closing 1 tab(s) in window 1...
+Closed 1 tab(s)
+Processing 1 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/1] ✓
+       https://www.verywellhealth.com/anti-inflammatory-spices-11847391
+
+Done. Added: 1  Skipped: 0  Failed: 0
+ 21:16:23 ▶[699]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --close-tabs --no-reload
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 5 tab(s) in window 1.
+Filtered 4 non-HTTP/S tabs.
+Skipped 0 filtered domain(s).
+Using cached bookmarks (2.5h old, 47040 bookmarks).
+Closing 1 tab(s)...
+Closing 1 tab(s) in window 1...
+Closed 1 tab(s)
+Processing 1 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/1] ✓
+       https://www.reddit.com/r/meshtastic/comments/1e828ai/need_a_little_bit_of_help_why_doesnt_my_node_show/
+
+Done. Added: 1  Skipped: 0  Failed: 0
+ 21:16:41 ▶[700]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --close-tabs --no-reload
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 4 tab(s) in window 1.
+Filtered 3 non-HTTP/S tabs.
+Skipped 0 filtered domain(s).
+Using cached bookmarks (2.5h old, 47040 bookmarks).
+Closing 1 tab(s)...
+Closing 1 tab(s) in window 1...
+Closed 1 tab(s)
+Processing 1 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/1] ✓
+       https://community.openmqttgateway.com/
+
+Done. Added: 1  Skipped: 0  Failed: 0
+ 21:16:52 ▶[701]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --close-tabs --no-reload
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 3 tab(s) in window 1.
+Filtered 2 non-HTTP/S tabs.
+Skipped 0 filtered domain(s).
+Using cached bookmarks (2.5h old, 47040 bookmarks).
+Closing 1 tab(s)...
+Closing 1 tab(s) in window 1...
+Closed 1 tab(s)
+Processing 1 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/1] ✓
+       https://www.reddit.com/r/meshtastic/comments/1ja3aml/finally_fixed_my_2_meshtastic_heltec_problem/
+
+Done. Added: 1  Skipped: 0  Failed: 0
+ 21:18:02 ▶[702]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --close-tabs --no-reload
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 2 tab(s) in window 1.
+Skipped 0 filtered domain(s).
+Using cached bookmarks (2.5h old, 47040 bookmarks).
+Closing 2 tab(s)...
+Closing 2 tab(s) in window 1...
+Closed 2 tab(s)
+Processing 2 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/2] ✓
+       https://www.reddit.com/r/meshtastic/comments/1qel4m6/automated_message/
+[2/2] ✓
+       https://www.reddit.com/r/meshtastic/comments/1pmhwz5/automated_reboot_scheduling/
+
+Done. Added: 2  Skipped: 0  Failed: 0
+ 21:18:16 ▶[703]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe
+Reading tabs from Chrome window 1 ...
+Activating and reloading all tabs in window 1 to wake suspended tabs...
+Waiting for pages to load...
+Extracting URLs...
+Found 18 tab(s) in window 1.
+Filtered 4 non-HTTP/S tabs.
+Skipped 0 filtered domain(s).
+Using cached bookmarks (2.5h old, 47040 bookmarks).
+[9/14] ✗  https://www.instagram.com/reel/DRBWm3BikRJ/
+       socket hang up
+[14/14] ✗  https://mtervodesign.com/collections/retro-music-cassette-collection?page=2
+       socket hang up
+Processing 14 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/14] ✓
+       https://dmv.ny.gov/forms/pd7.pdf
+[2/14] ✓
+       https://www.facebook.com/groups/437968493058198/permalink/2648388572016168/
+[3/14] ✓
+       https://www.facebook.com/watch/?v=1497679971371165
+[4/14] ✓
+       https://www.instagram.com/reel/DN1fRp8WOjC/
+[5/14] ✓
+       https://www.instagram.com/reel/DPIG8rxj_Ry/
+[6/14] ✓
+       https://www.instagram.com/reel/DP9lpnOCCPW/
+[7/14] ✓
+       https://cloud-va.insta360.com/share/va/350Q7s5Z0h602L7u3362907136/player?mediaId=307204274536845312
+[8/14] ✓
+       https://www.instagram.com/reel/DRa8vtJjorv/
+[10/14] ✓
+       https://www.instagram.com/reel/DRxp51wAISZ/
+[11/14] ✓
+       https://www.instagram.com/reel/DOqOuH_CQuQ/
+[12/14] ✓
+       https://www.youtube.com/watch?v=Dc5tdD4ap2M
+[13/14] ✓
+       https://www.instagram.com/dadsocial/reel/DSbeg7JDAhJ/
+
+Done. Added: 12  Skipped: 0  Failed: 2
+ 21:21:09 ▶[704]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe
+Reading tabs from Chrome window 1 ...
+Activating and reloading all tabs in window 1 to wake suspended tabs...
+Waiting for pages to load...
+Extracting URLs...
+Found 18 tab(s) in window 1.
+Filtered 1 non-HTTP/S tabs.
+Skipping www.google.com: https://www.google.com/search?q=snl+alexa+skit
+Skipped 1 filtered domain(s).
+Using cached bookmarks (2.6h old, 47040 bookmarks).
+[3/16] ✗  https://www.facebook.com/events/1527025614952226/permalink/1527025628285558/
+       socket hang up
+[12/16] ✗  https://www.instagram.com/reel/DRxp51wAISZ/
+       socket hang up
+Processing 16 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/16] ✓
+       https://dmv.ny.gov/forms/pd7.pdf
+[2/16] ✓
+       https://www.facebook.com/groups/437968493058198/permalink/2648388572016168/
+[4/16] ✓
+       https://www.facebook.com/watch/?v=1497679971371165
+[5/16] ✓
+       https://www.instagram.com/reel/DN1fRp8WOjC/
+[6/16] ✓
+       https://www.instagram.com/reel/DLnV30csbdL/
+[7/16] ✓
+       https://www.instagram.com/reel/DPIG8rxj_Ry/
+[8/16] ✓
+       https://www.instagram.com/reel/DP9lpnOCCPW/
+[9/16] ✓
+       https://cloud-va.insta360.com/share/va/350Q7s5Z0h602L7u3362907136/player?mediaId=307204274536845312
+[10/16] ✓
+       https://www.instagram.com/reel/DRa8vtJjorv/
+[11/16] ✓
+       https://www.instagram.com/robinwillliamscomedy/
+[13/16] ✓
+       https://www.instagram.com/reel/DOqOuH_CQuQ/
+[14/16] ✓
+       https://www.instagram.com/reel/DR7ph-wAZZ_/
+[15/16] ✓
+       https://www.instagram.com/dadsocial/reel/DSbeg7JDAhJ/
+[16/16] ✓
+       https://mtervodesign.com/collections/retro-music-cassette-collection?page=2
+
+Done. Added: 14  Skipped: 0  Failed: 2
+ 21:25:38 ▶[705]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --close-tabs --no-reload
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 18 tab(s) in window 1.
+Filtered 1 non-HTTP/S tabs.
+Skipping www.google.com: https://www.google.com/search?q=snl+alexa+skit
+Skipped 1 filtered domain(s).
+Using cached bookmarks (2.6h old, 47040 bookmarks).
+Closing 16 tab(s)...
+Closing 16 tab(s) in window 1...
+Closed 0 tab(s)
+Processing 16 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/16] ✓
+       https://dmv.ny.gov/forms/pd7.pdf
+[2/16] ✓
+       https://www.facebook.com/groups/437968493058198/permalink/2648388572016168/
+[3/16] ✓
+       https://www.facebook.com/events/1527025614952226/permalink/1527025628285558/
+[4/16] ✓
+       https://www.facebook.com/watch/?v=1497679971371165
+[5/16] ✓
+       https://www.instagram.com/reel/DN1fRp8WOjC/
+[6/16] ✓
+       https://www.instagram.com/reel/DLnV30csbdL/
+[7/16] ✓
+       https://www.instagram.com/reel/DPIG8rxj_Ry/
+[8/16] ✓
+       https://www.instagram.com/reel/DP9lpnOCCPW/
+[9/16] ✓
+       https://cloud-va.insta360.com/share/va/350Q7s5Z0h602L7u3362907136/player?mediaId=307204274536845312
+[10/16] ✓
+       https://www.instagram.com/reel/DRa8vtJjorv/
+[11/16] ✓
+       https://www.instagram.com/robinwillliamscomedy/
+[12/16] ✓
+       https://www.instagram.com/reel/DRxp51wAISZ/
+[13/16] ✓
+       https://www.instagram.com/reel/DOqOuH_CQuQ/
+[14/16] ✓
+       https://www.instagram.com/reel/DR7ph-wAZZ_/
+[15/16] ✓
+       https://www.instagram.com/dadsocial/reel/DSbeg7JDAhJ/
+[16/16] ✓
+       https://mtervodesign.com/collections/retro-music-cassette-collection?page=2
+
+Done. Added: 16  Skipped: 0  Failed: 0
+ 21:27:01 ▶[706]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --close-tabs --no-reload
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 18 tab(s) in window 1.
+Filtered 1 non-HTTP/S tabs.
+Skipping www.google.com: https://www.google.com/search?q=snl+alexa+skit
+Skipped 1 filtered domain(s).
+Using cached bookmarks (2.7h old, 47040 bookmarks).
+Closing 16 tab(s)...
+Closing 16 tab(s) in window 1...
+Closed 16 tab(s)
+Processing 16 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/16] ✓
+       https://dmv.ny.gov/forms/pd7.pdf
+[2/16] ✓
+       https://www.facebook.com/groups/437968493058198/permalink/2648388572016168/
+[3/16] ✓
+       https://www.facebook.com/events/1527025614952226/permalink/1527025628285558/
+[4/16] ✓
+       https://www.facebook.com/watch/?v=1497679971371165
+[5/16] ✓
+       https://www.instagram.com/reel/DN1fRp8WOjC/
+[6/16] ✓
+       https://www.instagram.com/reel/DLnV30csbdL/
+[7/16] ✓
+       https://www.instagram.com/reel/DPIG8rxj_Ry/
+[8/16] ✓
+       https://www.instagram.com/reel/DP9lpnOCCPW/
+[9/16] ✓
+       https://cloud-va.insta360.com/share/va/350Q7s5Z0h602L7u3362907136/player?mediaId=307204274536845312
+[10/16] ✓
+       https://www.instagram.com/reel/DRa8vtJjorv/
+[11/16] ✓
+       https://www.instagram.com/robinwillliamscomedy/
+[12/16] ✓
+       https://www.instagram.com/reel/DRxp51wAISZ/
+[13/16] ✓
+       https://www.instagram.com/reel/DOqOuH_CQuQ/
+[14/16] ✓
+       https://www.instagram.com/reel/DR7ph-wAZZ_/
+[15/16] ✓
+       https://www.instagram.com/dadsocial/reel/DSbeg7JDAhJ/
+[16/16] ✓
+       https://mtervodesign.com/collections/retro-music-cassette-collection?page=2
+
+Done. Added: 16  Skipped: 0  Failed: 0
+ 21:28:15 ▶[707]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --close-tabs --no-reload
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 2 tab(s) in window 1.
+Skipping www.google.com: https://www.google.com/search?q=snl+alexa+skit
+Skipped 1 filtered domain(s).
+Using cached bookmarks (2.7h old, 47040 bookmarks).
+Closing 1 tab(s)...
+Closing 1 tab(s) in window 1...
+Closed 1 tab(s)
+Processing 1 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/1] ✓
+       https://www.instagram.com/reel/DQPKnAFEl1t/
+
+Done. Added: 1  Skipped: 0  Failed: 0
+
+
+ $ ▶ ./run.sh --window 1 --dedupe --no-reload --close-tabs
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 40 tab(s) in window 1.
+Skipped 0 filtered domain(s).
+Using cached bookmarks (3.0h old, 47040 bookmarks).
+
+Closing 40 tab(s)...
+Closing 40 tab(s) in window 1...
+Closed 0 tab(s)
+Processing 40 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/40] ✓
+       https://docs.google.com/presentation/d/1zrfVlE5r61ZNQrmXKx5gJmBcXnoa_WerHEnTxu5SMco/edit?slide=id.g3cfa019267_4_0&pli=1#slide=id.g3cfa019267_4_0
+[2/40] ✓
+       https://itnext.io/the-next-generation-tool-for-kubernetes-security-93b2bbe7f7ac
+[3/40] ✓
+       https://medium.com/@sridharcloud/why-my-kubernetes-cluster-runs-120-crds-and-yours-should-too-bd8e9c6432a3
+[4/40] ✓
+       https://medium.com/@rudra910203/we-replaced-50-cronjobs-with-1-argo-workflow-was-it-worth-it-eedea2fe6f8f
+[5/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1n7cq9d/kubernetes_cluster_running_in_vm_how_to_assign_ip/
+[6/40] ✓
+       https://kubesphere.medium.com/kubernetes-v1-34-fe6cc4722649
+[7/40] ✓
+       https://itnext.io/manage-secrets-of-your-kubernetes-platform-at-scale-with-gitops-e031079bcb0a
+[8/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1nfwd8e/discussion_the_future_of_commercial_kubernetes/
+[9/40] ✓
+       https://aws.plainenglish.io/20-kubernetes-administration-tips-every-cluster-operator-should-know-24b38805a35f
+[10/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1odwtv7/how_to_spread_pods_over_multiple_karpenter/
+[11/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1ofqhqf/ephemeral_namespaces/
+[12/40] ✓
+       https://faun.pub/zero-trust-with-cilium-enforcing-mtls-in-kubernetes-8a6171f9701a
+[13/40] ✓
+       https://www.reddit.com/r/LLMDevs/comments/1oko8dn/kthena_makes_kubernetes_llm_inference_simplified/
+[14/40] ✓
+       https://medium.com/@davidcesc/how-we-cut-kubernetes-costs-by-78-without-a-second-of-downtime-ef3ceffaefe0
+[15/40] ✓
+       https://medium.com/spacelift/top-12-policy-as-code-pac-tools-in-2025-a589537fd4e7
+[16/40] ✓
+       https://itnext.io/openchoreo-the-secure-by-default-internal-developer-platform-based-on-cells-and-planes-438fdd3484de
+[17/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1oq5fmp/psa_k9s_in_lazyvim/
+[18/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1osfchn/i_built_kubemcp_manage_your_kubernetes_clusters/
+[19/40] ✓
+       https://medium.com/@ShiveeGupta/building-a-production-grade-observability-platform-with-signoz-clickhouse-and-opentelemetry-d7f09a5250f5
+[20/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1oxlj36/i_migrated_to_envoy_gateway/
+[21/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1oxqb8u/cilium_is_the_2nd_project_in_terms_of_contribution/
+[22/40] ✓
+       https://medium.com/living-devops/youre-not-ready-for-kubernetes-observability-until-you-understand-these-concepts-5acc6390cfa5
+[23/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1p12dkr/external_secrets_inc_winds_down_operations/
+[24/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1p2v4ia/future_of_ingress_vs_gateway_apis/
+[25/40] ✓
+       https://medium.com/curious-devs-corner/kubernetes-backup-and-disaster-recovery-with-velero-a-practical-guide-23f62b1c1ba1
+[26/40] ✓
+       https://faun.pub/migrating-from-nginx-ingress-controller-to-kubernetes-gateway-api-using-ingress2gateway-c7e8cef212fa
+[27/40] ✓
+       https://medium.com/oracledevs/goodbye-ingress-nginx-hello-kgateway-part-1-introduction-9827845985b5
+[28/40] ✓
+       https://medium.com/@rosgluk/prometheus-monitoring-complete-setup-best-practices-9cee2d179038
+[29/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1p7nd3b/open_source_k8s_operator_for_deploying_local_llms/
+[30/40] ✓
+       https://observabilityguy.medium.com/we-replaced-terraform-with-pulumi-heres-what-actually-happened-ab1014f2fc31
+[31/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1p6qhl2/migration_from_ingressnginx_to_nginxingress/
+[32/40] ✓
+       https://medium.com/@vinodbokare0588/google-deployed-130-000-kubernetes-pods-in-under-4-minutes-heres-how-a8e956da40fd
+[33/40] ✓
+       https://user-cube.medium.com/lightweight-kubernetes-for-devops-testing-a-practical-guide-to-colima-5ee338ab6731
+[34/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1pgvw04/easykube_announcement/
+[35/40] ✓
+       https://blog.bytebytego.com/p/how-doordash-moved-to-a-service-mesh
+[36/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1pn08d9/how_do_you_convince_leadership_to_stop_putting/
+[37/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1pqkffu/kubediagrams/
+[38/40] ✓
+       https://www.reddit.com/r/devops/comments/1prqehq/kubeuser_kubernetesnative_user_rbac_management/
+[39/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1ptlekz/k8s_context_and_namespace_switcher/
+[40/40] ✓
+       https://medium.com/startup-insider-edge/the-kubernetes-skills-nobody-tests-you-on-but-everyone-needs-8be3845a68e7
+
+Done. Added: 40  Skipped: 0  Failed: 0
+ 21:51:01 ▶[721]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶
+ 21:51:01 ▶[721]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --no-reload --close-tabs
+
+
+
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 1 tab(s) in window 1.
+Skipping pinboard.in: https://pinboard.in/u:slmingol
+Skipped 1 filtered domain(s).
+Using cached bookmarks (3.1h old, 47040 bookmarks).
+Processing 0 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+
+Done. Added: 0  Skipped: 0  Failed: 0
+ 21:51:12 ▶[722]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶
+ 21:51:12 ▶[722]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶
+ 21:51:12 ▶[722]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶
+ 21:51:12 ▶[722]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --no-reload --close-tabs
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 40 tab(s) in window 1.
+Skipped 0 filtered domain(s).
+Using cached bookmarks (3.1h old, 47040 bookmarks).
+Closing 40 tab(s)...
+Closing 40 tab(s) in window 1...
+Closed 0 tab(s)
+Processing 40 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/40] ✓
+       https://docs.google.com/presentation/d/1zrfVlE5r61ZNQrmXKx5gJmBcXnoa_WerHEnTxu5SMco/edit?slide=id.g3cfa019267_4_0&pli=1#slide=id.g3cfa019267_4_0
+[2/40] ✓
+       https://itnext.io/the-next-generation-tool-for-kubernetes-security-93b2bbe7f7ac
+[3/40] ✓
+       https://medium.com/@sridharcloud/why-my-kubernetes-cluster-runs-120-crds-and-yours-should-too-bd8e9c6432a3
+[4/40] ✓
+       https://medium.com/@rudra910203/we-replaced-50-cronjobs-with-1-argo-workflow-was-it-worth-it-eedea2fe6f8f
+[5/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1n7cq9d/kubernetes_cluster_running_in_vm_how_to_assign_ip/
+[6/40] ✓
+       https://kubesphere.medium.com/kubernetes-v1-34-fe6cc4722649
+[7/40] ✓
+       https://itnext.io/manage-secrets-of-your-kubernetes-platform-at-scale-with-gitops-e031079bcb0a
+[8/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1nfwd8e/discussion_the_future_of_commercial_kubernetes/
+[9/40] ✓
+       https://aws.plainenglish.io/20-kubernetes-administration-tips-every-cluster-operator-should-know-24b38805a35f
+[10/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1odwtv7/how_to_spread_pods_over_multiple_karpenter/
+[11/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1ofqhqf/ephemeral_namespaces/
+[12/40] ✓
+       https://faun.pub/zero-trust-with-cilium-enforcing-mtls-in-kubernetes-8a6171f9701a
+[13/40] ✓
+       https://www.reddit.com/r/LLMDevs/comments/1oko8dn/kthena_makes_kubernetes_llm_inference_simplified/
+[14/40] ✓
+       https://medium.com/@davidcesc/how-we-cut-kubernetes-costs-by-78-without-a-second-of-downtime-ef3ceffaefe0
+[15/40] ✓
+       https://medium.com/spacelift/top-12-policy-as-code-pac-tools-in-2025-a589537fd4e7
+[16/40] ✓
+       https://itnext.io/openchoreo-the-secure-by-default-internal-developer-platform-based-on-cells-and-planes-438fdd3484de
+[17/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1oq5fmp/psa_k9s_in_lazyvim/
+[18/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1osfchn/i_built_kubemcp_manage_your_kubernetes_clusters/
+[19/40] ✓
+       https://medium.com/@ShiveeGupta/building-a-production-grade-observability-platform-with-signoz-clickhouse-and-opentelemetry-d7f09a5250f5
+[20/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1oxlj36/i_migrated_to_envoy_gateway/
+[21/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1oxqb8u/cilium_is_the_2nd_project_in_terms_of_contribution/
+[22/40] ✓
+       https://medium.com/living-devops/youre-not-ready-for-kubernetes-observability-until-you-understand-these-concepts-5acc6390cfa5
+[23/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1p12dkr/external_secrets_inc_winds_down_operations/
+[24/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1p2v4ia/future_of_ingress_vs_gateway_apis/
+[25/40] ✓
+       https://medium.com/curious-devs-corner/kubernetes-backup-and-disaster-recovery-with-velero-a-practical-guide-23f62b1c1ba1
+[26/40] ✓
+       https://faun.pub/migrating-from-nginx-ingress-controller-to-kubernetes-gateway-api-using-ingress2gateway-c7e8cef212fa
+[27/40] ✓
+       https://medium.com/oracledevs/goodbye-ingress-nginx-hello-kgateway-part-1-introduction-9827845985b5
+[28/40] ✓
+       https://medium.com/@rosgluk/prometheus-monitoring-complete-setup-best-practices-9cee2d179038
+[29/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1p7nd3b/open_source_k8s_operator_for_deploying_local_llms/
+[30/40] ✓
+       https://observabilityguy.medium.com/we-replaced-terraform-with-pulumi-heres-what-actually-happened-ab1014f2fc31
+[31/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1p6qhl2/migration_from_ingressnginx_to_nginxingress/
+[32/40] ✓
+       https://medium.com/@vinodbokare0588/google-deployed-130-000-kubernetes-pods-in-under-4-minutes-heres-how-a8e956da40fd
+[33/40] ✓
+       https://user-cube.medium.com/lightweight-kubernetes-for-devops-testing-a-practical-guide-to-colima-5ee338ab6731
+[34/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1pgvw04/easykube_announcement/
+[35/40] ✓
+       https://blog.bytebytego.com/p/how-doordash-moved-to-a-service-mesh
+[36/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1pn08d9/how_do_you_convince_leadership_to_stop_putting/
+[37/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1pqkffu/kubediagrams/
+[38/40] ✓
+       https://www.reddit.com/r/devops/comments/1prqehq/kubeuser_kubernetesnative_user_rbac_management/
+[39/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1ptlekz/k8s_context_and_namespace_switcher/
+[40/40] ✓
+       https://medium.com/startup-insider-edge/the-kubernetes-skills-nobody-tests-you-on-but-everyone-needs-8be3845a68e7
+
+Done. Added: 40  Skipped: 0  Failed: 0
+ 21:53:36 ▶[723]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe --no-reload --close-tabs
+Reading tabs from Chrome window 1 ...
+Skipping tab reload (--no-reload specified).
+Extracting URLs...
+Found 40 tab(s) in window 1.
+Skipped 0 filtered domain(s).
+Using cached bookmarks (3.1h old, 47040 bookmarks).
+Closing 40 tab(s)...
+Closing 40 tab(s) in window 1...
+Closed 40 tab(s)
+Processing 40 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/40] ✓
+       https://docs.google.com/presentation/d/1zrfVlE5r61ZNQrmXKx5gJmBcXnoa_WerHEnTxu5SMco/edit?slide=id.g3cfa019267_4_0&pli=1#slide=id.g3cfa019267_4_0
+[2/40] ✓
+       https://itnext.io/the-next-generation-tool-for-kubernetes-security-93b2bbe7f7ac
+[3/40] ✓
+       https://medium.com/@sridharcloud/why-my-kubernetes-cluster-runs-120-crds-and-yours-should-too-bd8e9c6432a3
+[4/40] ✓
+       https://medium.com/@rudra910203/we-replaced-50-cronjobs-with-1-argo-workflow-was-it-worth-it-eedea2fe6f8f
+[5/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1n7cq9d/kubernetes_cluster_running_in_vm_how_to_assign_ip/
+[6/40] ✓
+       https://kubesphere.medium.com/kubernetes-v1-34-fe6cc4722649
+[7/40] ✓
+       https://itnext.io/manage-secrets-of-your-kubernetes-platform-at-scale-with-gitops-e031079bcb0a
+[8/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1nfwd8e/discussion_the_future_of_commercial_kubernetes/
+[9/40] ✓
+       https://aws.plainenglish.io/20-kubernetes-administration-tips-every-cluster-operator-should-know-24b38805a35f
+[10/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1odwtv7/how_to_spread_pods_over_multiple_karpenter/
+[11/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1ofqhqf/ephemeral_namespaces/
+[12/40] ✓
+       https://faun.pub/zero-trust-with-cilium-enforcing-mtls-in-kubernetes-8a6171f9701a
+[13/40] ✓
+       https://www.reddit.com/r/LLMDevs/comments/1oko8dn/kthena_makes_kubernetes_llm_inference_simplified/
+[14/40] ✓
+       https://medium.com/@davidcesc/how-we-cut-kubernetes-costs-by-78-without-a-second-of-downtime-ef3ceffaefe0
+[15/40] ✓
+       https://medium.com/spacelift/top-12-policy-as-code-pac-tools-in-2025-a589537fd4e7
+[16/40] ✓
+       https://itnext.io/openchoreo-the-secure-by-default-internal-developer-platform-based-on-cells-and-planes-438fdd3484de
+[17/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1oq5fmp/psa_k9s_in_lazyvim/
+[18/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1osfchn/i_built_kubemcp_manage_your_kubernetes_clusters/
+[19/40] ✓
+       https://medium.com/@ShiveeGupta/building-a-production-grade-observability-platform-with-signoz-clickhouse-and-opentelemetry-d7f09a5250f5
+[20/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1oxlj36/i_migrated_to_envoy_gateway/
+[21/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1oxqb8u/cilium_is_the_2nd_project_in_terms_of_contribution/
+[22/40] ✓
+       https://medium.com/living-devops/youre-not-ready-for-kubernetes-observability-until-you-understand-these-concepts-5acc6390cfa5
+[23/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1p12dkr/external_secrets_inc_winds_down_operations/
+[24/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1p2v4ia/future_of_ingress_vs_gateway_apis/
+[25/40] ✓
+       https://medium.com/curious-devs-corner/kubernetes-backup-and-disaster-recovery-with-velero-a-practical-guide-23f62b1c1ba1
+[26/40] ✓
+       https://faun.pub/migrating-from-nginx-ingress-controller-to-kubernetes-gateway-api-using-ingress2gateway-c7e8cef212fa
+[27/40] ✓
+       https://medium.com/oracledevs/goodbye-ingress-nginx-hello-kgateway-part-1-introduction-9827845985b5
+[28/40] ✓
+       https://medium.com/@rosgluk/prometheus-monitoring-complete-setup-best-practices-9cee2d179038
+[29/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1p7nd3b/open_source_k8s_operator_for_deploying_local_llms/
+[30/40] ✓
+       https://observabilityguy.medium.com/we-replaced-terraform-with-pulumi-heres-what-actually-happened-ab1014f2fc31
+[31/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1p6qhl2/migration_from_ingressnginx_to_nginxingress/
+[32/40] ✓
+       https://medium.com/@vinodbokare0588/google-deployed-130-000-kubernetes-pods-in-under-4-minutes-heres-how-a8e956da40fd
+[33/40] ✓
+       https://user-cube.medium.com/lightweight-kubernetes-for-devops-testing-a-practical-guide-to-colima-5ee338ab6731
+[34/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1pgvw04/easykube_announcement/
+[35/40] ✓
+       https://blog.bytebytego.com/p/how-doordash-moved-to-a-service-mesh
+[36/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1pn08d9/how_do_you_convince_leadership_to_stop_putting/
+[37/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1pqkffu/kubediagrams/
+[38/40] ✓
+       https://www.reddit.com/r/devops/comments/1prqehq/kubeuser_kubernetesnative_user_rbac_management/
+[39/40] ✓
+       https://www.reddit.com/r/kubernetes/comments/1ptlekz/k8s_context_and_namespace_switcher/
+[40/40] ✓
+       https://medium.com/startup-insider-edge/the-kubernetes-skills-nobody-tests-you-on-but-everyone-needs-8be3845a68e7
+
+Done. Added: 40  Skipped: 0  Failed: 0
+ 21:57:49 ▶[724]▶ ~/dev/projects/chrome-tabs-to-pinboard ▶
+ $ ▶ ./run.sh --window 1 --dedupe
+Reading tabs from Chrome window 1 ...
+Activating and reloading all tabs in window 1 to wake suspended tabs...
+Waiting for pages to load...
+Extracting URLs...
+Found 41 tab(s) in window 1.
+Filtered 6 non-HTTP/S tabs.
+Skipping netbox.lamolabs.org: https://netbox.lamolabs.org/login/?next=/ipam/vlans/
+Skipped 1 filtered domain(s).
+Using cached bookmarks (3.2h old, 47040 bookmarks).
+Processing 33 tab(s) ...
+Checking against 47040 existing bookmark(s).
+
+[1/33] ✓
+       https://www.youtube.com/watch?v=-ImtLXcEna8
+[2/33] ✓
+       https://www.reddit.com/r/PangolinReverseProxy/comments/1oijcqc/using_local_install_but_prepare_for_future/
+[3/33] ✓
+       https://www.xda-developers.com/paired-notebooklm-with-microsoft-copilot/
+[4/33] ✓
+       https://www.xda-developers.com/replaced-every-cloud-notes-app-with-synced-markdown-folder/
+[5/33] ✓
+       https://www.xda-developers.com/self-hosting-apps-prove-that-nobody-should-pay-for-subscriptions/
+[6/33] ✓
+       https://www.reddit.com/r/OrangePI/comments/1p4sxc6/i_created_a_llamacpp_fork_with_the_rockchip_npu/
+[7/33] ✓
+       https://www.xda-developers.com/obsidian-best-note-taking-app-for-people-new-to-note-taking/
+[8/33] ✓
+       https://www.xda-developers.com/things-esp32-display-can-easily-do-that-tablet-cant/
+[9/33] ✓
+       https://www.androidauthority.com/best-office-tech-black-friday-2025-guide-3614208/
+[10/33] ✓
+       https://www.reddit.com/r/youtubedl/comments/opd0io/using_youtubedl_to_download_dropouttv_videos/
+[11/33] ✓
+       https://www.makeuseof.com/i-created-one-obsidian-template-that-organizes-my-entire-life/
+[12/33] ✓
+       https://blog.stackademic.com/my-experience-switching-from-docker-to-podman-ed2713c45100
+[13/33] ✓
+       https://www.reddit.com/r/selfhosted/comments/1p2ck09/my_fully_dockerized_homelab_topology_after_years/
+[14/33] ✓
+       https://www.rwx.com/blog/we-deleted-our-dockerfiles
+[15/33] ✓
+       https://pixicstudio.medium.com/15-best-docker-containers-to-self-host-for-a-powerful-setup-5491ad54d8f3
+[16/33] ✓
+       https://www.howtogeek.com/8-things-you-should-with-terminal-commands-instead-of-opening-a-website/
+[17/33] ✓
+       https://www.virtualizationhowto.com/2025/11/15-troubleshooting-commands-every-linux-home-lab-admin-should-know/
+[18/33] ✓
+       https://www.howtogeek.com/these-linux-apps-let-you-monitor-system-resources-in-style/
+[19/33] ✓
+       https://www.reddit.com/r/kubernetes/comments/1ptdczb/preferred_monitoringstack_for_homelab_or/
+[20/33] ✓
+       https://blog.n8n.io/best-ai-workflow-automation-tools/
+[21/33] ✓
+       https://www.reddit.com/r/UsenetNoRules/comments/1psyift/not_to_be_mentioned/
+[22/33] ✓
+       https://www.virtualizationhowto.com/2025/11/whats-up-docker-keeps-your-home-lab-containers-updated-automatically/
+[23/33] ✓
+       https://www.xda-developers.com/docker-container-that-ended-fear-of-data-loss/
+[24/33] ✓
+       https://www.reddit.com/r/homelab/comments/1p4sg4a/2025_homelab/
+[25/33] ✓
+       https://www.xda-developers.com/obsidian-project-mapping/
+[26/33] ✓
+       https://www.xda-developers.com/organizing-brave-bookmarks-with-notebooklm/
+[27/33] ✓
+       https://www.reddit.com/r/docker/comments/1pp8gwk/goodbye_containrrrwatchtower_2135/
+[28/33] ✓
+       https://www.reddit.com/r/jellyfin/comments/1pqpfdi/innovating_to_address_streaming_abuse_and_our/
+[29/33] ✓
+       https://www.reddit.com/r/BirdNET_Analyzer/comments/1poutai/running_birdnetpi_off_the_grid/
+[30/33] ✓
+       https://www.reddit.com/r/homelab/comments/1pr69dw/built_my_own_asn_with_bgp_anycast_across_4/
+[31/33] ✓
+       https://www.xda-developers.com/bentopdf-over-stirlingpdf-as-primary-pdf-toolkit/
+[32/33] ✓
+       https://www.reddit.com/r/JellyfinCommunity/comments/1pnms8f/mkvpriority_automatically_set_preferred_audio_and/
+[33/33] ✓
+       https://www.reddit.com/r/selfhosted/comments/1preqxc/there_is_a_limit_to_selfhosting/
+
+Done. Added: 33  Skipped: 0  Failed: 0
