@@ -19,6 +19,7 @@ Automatically bookmark your Chrome tabs to Pinboard with AI-generated tags and s
 
 - [Overview](#overview)
 - [Requirements](#requirements)
+- [Docker Images](#docker-images)
 - [Quick Start](#quick-start)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -32,6 +33,7 @@ Automatically bookmark your Chrome tabs to Pinboard with AI-generated tags and s
 - [Examples](#examples)
 - [Performance](#performance)
 - [FAQ](#faq)
+- [Versioning and Releases](#versioning-and-releases)
 - [License](#license)
 
 ## Overview
@@ -644,6 +646,82 @@ A: Your cache may be stale. Run `make refresh-cache` to update from Pinboard API
 
 **Q: Can I run this automatically on a schedule?**  
 A: Yes, create a cron job or launchd task. Ensure PINBOARD_TOKEN is set in the environment.
+
+## Versioning and Releases
+
+This project uses [Semantic Versioning](https://semver.org/) and automated releases via GitHub Actions.
+
+### Version Information
+
+Check the current version:
+```bash
+./run.sh --version
+# Output: Chrome Tabs to Pinboard v1.0.0
+```
+
+The version is stored in the `VERSION` file at the root of the repository.
+
+### Automated Releases
+
+Every push to `main` triggers an automated version bump based on commit messages using [Conventional Commits](https://www.conventionalcommits.org/):
+
+| Commit Prefix | Version Bump | Example |
+|---------------|--------------|---------|
+| `fix:` | Patch | 1.0.0 → 1.0.1 |
+| `feat:` | Minor | 1.0.0 → 1.1.0 |
+| `feat!:` or `BREAKING CHANGE:` | Major | 1.0.0 → 2.0.0 |
+
+**Example workflow:**
+```bash
+# Make changes
+git add .
+
+# Commit with conventional commit message
+git commit -m "feat: add support for Firefox"  # Will trigger 1.x.0 → 1.y.0
+git commit -m "fix: resolve Twitter extraction bug"  # Will trigger 1.0.x → 1.0.y
+git commit -m "feat!: change API interface"  # Will trigger x.0.0 → y.0.0
+
+# Push to trigger automation
+git push origin main
+```
+
+### What Happens Automatically
+
+1. **Version Bump Workflow** (`.github/workflows/version-bump.yml`):
+   - Analyzes commit messages
+   - Bumps version in `VERSION` file
+   - Creates git tag (e.g., `v1.1.0`)
+   - Pushes tag back to repository
+
+2. **Docker Build Workflow** (`.github/workflows/docker-build.yml`):
+   - Builds multi-platform Docker images (amd64, arm64)
+   - Publishes to GitHub Container Registry
+   - Tags with semantic versions: `1.1.0`, `1.1`, `1`, `latest`
+   - Creates GitHub Release with auto-generated notes
+
+### Using Docker Images
+
+Pre-built images are available from GitHub Container Registry:
+
+```bash
+# Pull latest release
+docker pull ghcr.io/slmingol/chrome-tabs-to-pinboard:latest
+
+# Pull specific version
+docker pull ghcr.io/slmingol/chrome-tabs-to-pinboard:1.0.0
+
+# Pull latest minor version (1.x)
+docker pull ghcr.io/slmingol/chrome-tabs-to-pinboard:1
+
+# Pull latest patch version (1.0.x)
+docker pull ghcr.io/slmingol/chrome-tabs-to-pinboard:1.0
+```
+
+**Note:** Local scripts (`./run.sh`, `make`) automatically build the image when needed, so manual pulling is optional for local development.
+
+View all available versions:
+- **Releases:** https://github.com/slmingol/chrome-tabs-to-pinboard/releases
+- **Container Tags:** https://github.com/slmingol/chrome-tabs-to-pinboard/pkgs/container/chrome-tabs-to-pinboard
 
 ## License
 
