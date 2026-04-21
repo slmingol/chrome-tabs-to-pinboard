@@ -1,5 +1,16 @@
 # Chrome Tabs to Pinboard
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/slmingol/chrome-tabs-to-pinboard?style=social)](https://github.com/slmingol/chrome-tabs-to-pinboard/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/slmingol/chrome-tabs-to-pinboard?style=social)](https://github.com/slmingol/chrome-tabs-to-pinboard/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/slmingol/chrome-tabs-to-pinboard)](https://github.com/slmingol/chrome-tabs-to-pinboard/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/slmingol/chrome-tabs-to-pinboard)](https://github.com/slmingol/chrome-tabs-to-pinboard/pulls)
+[![GitHub last commit](https://img.shields.io/github/last-commit/slmingol/chrome-tabs-to-pinboard)](https://github.com/slmingol/chrome-tabs-to-pinboard/commits/main)
+[![GitHub code size](https://img.shields.io/github/languages/code-size/slmingol/chrome-tabs-to-pinboard)](https://github.com/slmingol/chrome-tabs-to-pinboard)
+[![Docker](https://img.shields.io/badge/docker-required-blue.svg)](https://www.docker.com/)
+[![Node.js](https://img.shields.io/badge/node.js-22-green.svg)](https://nodejs.org/)
+[![Platform](https://img.shields.io/badge/platform-macOS-lightgrey.svg)](https://www.apple.com/macos/)
+
 Automatically bookmark your Chrome tabs to Pinboard with AI-generated tags and summaries.
 
 ## Table of Contents
