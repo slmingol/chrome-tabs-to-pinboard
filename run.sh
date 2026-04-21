@@ -19,11 +19,12 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 IMAGE_NAME="chrome-tabs-to-pinboard"
+VERSION="$(cat "${SCRIPT_DIR}/VERSION" 2>/dev/null || echo "dev")"
 
 # ─── Help ────────────────────────────────────────────────────────────────────
 show_help() {
-  cat << 'EOF'
-Chrome Tabs to Pinboard - Bookmark your tabs with AI-generated tags
+  cat << EOF
+Chrome Tabs to Pinboard v${VERSION} - Bookmark your tabs with AI-generated tags
 
 USAGE:
   ./run.sh [OPTIONS]
@@ -36,6 +37,7 @@ OPTIONS:
   --no-reload        Skip reloading suspended tabs (faster)
   --close-tabs       Close tabs after successful bookmarking
   --refresh-cache    Force refresh bookmark cache (24hr TTL)
+  --version          Show version information
   --help             Show this help message
 
 ENVIRONMENT:
@@ -83,6 +85,7 @@ REFRESH_CACHE=""
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --help|-h)       show_help ;;
+    --version|-v)    echo "Chrome Tabs to Pinboard v${VERSION}"; exit 0 ;;
     --window)        WINDOW="$2"; shift 2 ;;
     --limit)         LIMIT="$2";  shift 2 ;;
     --dry-run)       DRY_RUN="1"; shift   ;;
@@ -125,8 +128,11 @@ else
 fi
 
 if [[ $REBUILD -eq 1 ]]; then
-  echo "Building Docker image '$IMAGE_NAME' ..."
-  docker build -t "$IMAGE_NAME" --label "src.hash=$SRC_HASH" "$SCRIPT_DIR"
+  echo "Building Docker image '$IMAGE_NAME' v${VERSION} ..."
+  docker build -t "$IMAGE_NAME" \
+    --label "src.hash=$SRC_HASH" \
+    --build-arg "VERSION=${VERSION}" \
+    "$SCRIPT_DIR"
 fi
 
 # ─── Get tabs from Chrome ─────────────────────────────────────────────────────

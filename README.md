@@ -1,6 +1,8 @@
 # Chrome Tabs to Pinboard
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/github/v/release/slmingol/chrome-tabs-to-pinboard?label=version)](https://github.com/slmingol/chrome-tabs-to-pinboard/releases)
+[![Docker Image](https://img.shields.io/badge/docker-ghcr.io-blue)](https://github.com/slmingol/chrome-tabs-to-pinboard/pkgs/container/chrome-tabs-to-pinboard)
 [![GitHub stars](https://img.shields.io/github/stars/slmingol/chrome-tabs-to-pinboard?style=social)](https://github.com/slmingol/chrome-tabs-to-pinboard/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/slmingol/chrome-tabs-to-pinboard?style=social)](https://github.com/slmingol/chrome-tabs-to-pinboard/network/members)
 [![GitHub issues](https://img.shields.io/github/issues/slmingol/chrome-tabs-to-pinboard)](https://github.com/slmingol/chrome-tabs-to-pinboard/issues)
@@ -53,6 +55,23 @@ This tool extracts all tabs from a Chrome window, analyzes their content, genera
 - **Docker or Podman**
 - **Pinboard account** with API token ([get yours here](https://pinboard.in/settings/password))
 - **Node.js 22+** (inside container, automatically handled by Docker)
+
+## Docker Images
+
+Pre-built Docker images are automatically published to GitHub Container Registry on each release:
+
+```bash
+# Pull latest version
+docker pull ghcr.io/slmingol/chrome-tabs-to-pinboard:latest
+
+# Pull specific version
+docker pull ghcr.io/slmingol/chrome-tabs-to-pinboard:1.0.0
+
+# Check available tags at:
+# https://github.com/slmingol/chrome-tabs-to-pinboard/pkgs/container/chrome-tabs-to-pinboard
+```
+
+**Note:** The local scripts (`./run.sh`, `make`) automatically build the image when needed, so manual pulling is optional.
 
 ## Quick Start
 
