@@ -11,8 +11,8 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 
 permissions:
-  contents: read
-  packages: write
+  contents: write  # Needed to create releases
+  packages: write  # Needed to push to GitHub Container Registry
 
 jobs:
   build-and-push:
