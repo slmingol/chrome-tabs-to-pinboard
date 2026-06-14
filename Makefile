@@ -1,5 +1,10 @@
 .PHONY: help build clean test preview run dedupe close-all refresh-cache install check-token
 
+ifneq (,$(wildcard .env))
+  include .env
+  export
+endif
+
 # Default target
 .DEFAULT_GOAL := help
 
