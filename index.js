@@ -24,6 +24,18 @@ const { URL } = require("url");
 const fs = require("fs");
 const path = require("path");
 
+// ─── Colors ──────────────────────────────────────────────────────────────────
+
+const C = {
+  reset:  "\x1b[0m",
+  bold:   "\x1b[1m",
+  dim:    "\x1b[2m",
+  red:    "\x1b[31m",
+  green:  "\x1b[32m",
+  yellow: "\x1b[33m",
+  cyan:   "\x1b[36m",
+};
+
 // ─── Config ──────────────────────────────────────────────────────────────────
 
 const PINBOARD_TOKEN = (process.env.PINBOARD_TOKEN || "").trim();
@@ -855,7 +867,7 @@ function pinboardGetAll() {
     
     return new Set(urls);
   }).catch(err => {
-    console.error(`Warning: Failed to fetch existing bookmarks: ${err.message}`);
+    console.error(`${C.yellow}Warning: Failed to fetch existing bookmarks: ${err.message}${C.reset}`);
     return new Set();
   });
 }
@@ -925,21 +937,22 @@ async function main() {
         if (path.includes('.pdf') || path.includes('/pdf')) {
           return true;
         }
-        console.error(`Skipping ${host}: ${t.url.slice(0, 60)}`);
+        console.error(`${C.dim}Skipping ${host}: ${t.url.slice(0, 60)}${C.reset}`);
         return false;
       }
-      
+
       // Skip other unwanted domains
       const SKIP_PATTERNS = [/lamolabs/, /flomarching/, /\bpinboard\.in\b/];
       const skip = SKIP_PATTERNS.some(re => re.test(host));
-      if (skip) console.error(`Skipping ${host}: ${t.url.slice(0, 60)}`);
+      if (skip) console.error(`${C.dim}Skipping ${host}: ${t.url.slice(0, 60)}${C.reset}`);
       return !skip;
     } catch (e) {
-      console.error(`Invalid URL (skipped): ${t.url}`);
+      console.error(`${C.red}Invalid URL (skipped): ${t.url}${C.reset}`);
       return false;
     }
   });
-  console.error(`Skipped ${beforeSkip - tabs.length} filtered domain(s).`);
+  if (beforeSkip - tabs.length > 0)
+    console.error(`${C.dim}Skipped ${beforeSkip - tabs.length} filtered domain(s).${C.reset}`);
 
   // Dedupe
   if (DEDUPE) {
@@ -950,8 +963,8 @@ async function main() {
   // Limit
   if (LIMIT > 0) tabs = tabs.slice(0, LIMIT);
 
-  console.log(`Processing ${tabs.length} tab(s) ...`);
-  if (DRY_RUN) console.log("DRY RUN – nothing will be written to Pinboard.\n");
+  console.log(`${C.bold}${C.cyan}Processing ${tabs.length} tab(s) ...${C.reset}`);
+  if (DRY_RUN) console.log(`${C.yellow}${C.bold}DRY RUN – nothing will be written to Pinboard.${C.reset}\n`);
 
   // Fetch all existing Pinboard bookmarks once (or use cache)
   const existingUrls = DRY_RUN ? new Set() : await pinboardGetAll();
@@ -963,17 +976,17 @@ async function main() {
 
   for (let i = 0; i < tabs.length; i++) {
     const { title, url } = tabs[i];
-    const label = `[${i + 1}/${tabs.length}]`;
+    const label = `${C.dim}[${i + 1}/${tabs.length}]${C.reset}`;
 
     const signals = await fetchPageSignals(url, title);
     const summary = buildSummary(signals);
     const tags    = buildTags(summary, url, title);
 
     if (DRY_RUN) {
-      console.log(`${label} ${title?.slice(0, 70)}`);
-      console.log(`  URL:     ${url}`);
-      console.log(`  SUMMARY: ${summary}`);
-      console.log(`  TAGS:    ${tags}`);
+      console.log(`${label} ${C.bold}${title?.slice(0, 70)}${C.reset}`);
+      console.log(`  ${C.dim}URL:${C.reset}     ${url}`);
+      console.log(`  ${C.dim}SUMMARY:${C.reset} ${summary}`);
+      console.log(`  ${C.dim}TAGS:${C.reset}    ${tags}`);
       console.log();
       continue;
     }
@@ -981,8 +994,8 @@ async function main() {
     // Check local Set instead of API
     if (existingUrls.has(url)) {
       skipped++;
-      console.log(`${label} ⊘  ${title?.slice(0, 60)} (already in Pinboard)`);
-      console.log(`       ${url}`);
+      console.log(`${label} ${C.yellow}⊘${C.reset}  ${title?.slice(0, 60)} ${C.dim}(already in Pinboard)${C.reset}`);
+      console.log(`       ${C.dim}${url}${C.reset}`);
       // Mark for closing if flag set
       if (CLOSE_TABS) console.log(`SUCCESS_URL:${url}`);
       continue;
@@ -991,21 +1004,21 @@ async function main() {
     try {
       await pinboardAdd(url, title, summary, tags);
       ok++;
-      console.log(`${label} ✓  ${title?.slice(0, 70)}`);
-      console.log(`       ${url}`);
+      console.log(`${label} ${C.green}✓${C.reset}  ${C.bold}${title?.slice(0, 70)}${C.reset}`);
+      console.log(`       ${C.dim}${url}${C.reset}`);
       // Output success marker for tab closing (filtered out in run.sh before display)
       if (CLOSE_TABS) console.log(`SUCCESS_URL:${url}`);
     } catch (err) {
       failed++;
-      console.error(`${label} ✗  ${url}`);
-      console.error(`       ${err.message}`);
+      console.error(`${label} ${C.red}✗${C.reset}  ${url}`);
+      console.error(`       ${C.red}${err.message}${C.reset}`);
     }
 
     if (i < tabs.length - 1) await sleep(DELAY_MS);
   }
 
   if (!DRY_RUN) {
-    console.log(`\nDone. Added: ${ok}  Skipped: ${skipped}  Failed: ${failed}`);
+    console.log(`\n${C.bold}Done.${C.reset}  Added: ${C.green}${ok}${C.reset}  Skipped: ${C.yellow}${skipped}${C.reset}  Failed: ${failed > 0 ? C.red : C.dim}${failed}${C.reset}`);
   }
 }
 
