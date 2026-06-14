@@ -17,6 +17,11 @@
 
 set -euo pipefail
 
+if ! command -v docker &>/dev/null && command -v podman &>/dev/null; then
+  docker() { podman "$@"; }
+  export -f docker
+fi
+
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 IMAGE_NAME="chrome-tabs-to-pinboard"
 VERSION="$(cat "${SCRIPT_DIR}/VERSION" 2>/dev/null || echo "dev")"
