@@ -64,7 +64,7 @@ clean: ## Remove Docker image and cache
 
 install: ## Make scripts executable
 	@echo "$(CYAN)Making scripts executable...$(RESET)"
-	@chmod +x run.sh get_tabs.sh close_tabs.sh
+	@chmod +x run.sh get_tabs.sh close_tabs.sh backup.sh
 	@echo "$(GREEN)✓ Installation complete$(RESET)"
 
 preview: check-token ## Dry-run preview (no writes to Pinboard)
@@ -98,6 +98,12 @@ close-all: check-token ## Recommended: dedupe + no-reload + close tabs
 close-fast: check-token ## Quick test: close first 10 tabs
 	@echo "$(CYAN)Quick test: closing first 10 tabs...$(RESET)"
 	@./run.sh --window $(WINDOW) --dedupe --no-reload --close-tabs --limit 10
+
+backup: check-token ## Export all bookmarks to ~/pinboard-backups/ (timestamped JSON)
+	@./backup.sh
+
+backup-dir: check-token ## Export bookmarks to custom dir (use DIR=/path/to/dir)
+	@./backup.sh --output-dir $(DIR)
 
 refresh-cache: ## Force refresh bookmark cache
 	@echo "$(CYAN)Refreshing bookmark cache...$(RESET)"
