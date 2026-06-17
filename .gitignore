@@ -24,6 +24,3 @@ debug_*.sh
 
 # Cache (user-specific)
 .cache/
-
-# Pinboard backups (user data)
-backups/
