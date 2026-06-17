@@ -19,7 +19,7 @@ RED='\033[0;31m'
 RESET='\033[0m'
 
 # ─── Defaults ─────────────────────────────────────────────────────────────────
-OUTPUT_DIR="${HOME}/pinboard-backups"
+OUTPUT_DIR="${SCRIPT_DIR}/backups"
 
 # ─── Args ─────────────────────────────────────────────────────────────────────
 while [[ $# -gt 0 ]]; do
@@ -29,7 +29,7 @@ while [[ $# -gt 0 ]]; do
       echo "Usage: ./backup.sh [--output-dir DIR]"
       echo ""
       echo "Exports all Pinboard bookmarks to a timestamped JSON file."
-      echo "Default output directory: ~/pinboard-backups/"
+      echo "Default output directory: ./backups/ (inside project dir)"
       exit 0 ;;
     *) echo "Unknown option: $1"; exit 1 ;;
   esac
