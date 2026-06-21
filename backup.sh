@@ -87,9 +87,10 @@ fetch_export() {
 }
 
 fetch_export json json
-# Pinboard rate-limits to 1 req/3s for posts/all
 sleep 4
 fetch_export xml xml
+sleep 4
+fetch_export html html
 
 # Count bookmarks from JSON file
 JSON_FILE="${BACKUP_DIR}/pinboard_${TIMESTAMP}.json"
