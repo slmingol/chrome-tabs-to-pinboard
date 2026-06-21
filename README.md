@@ -10,7 +10,7 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/slmingol/chrome-tabs-to-pinboard)](https://github.com/slmingol/chrome-tabs-to-pinboard/commits/main)
 [![GitHub code size](https://img.shields.io/github/languages/code-size/slmingol/chrome-tabs-to-pinboard)](https://github.com/slmingol/chrome-tabs-to-pinboard)
 [![Docker](https://img.shields.io/badge/docker-required-blue.svg)](https://www.docker.com/)
-[![Node.js](https://img.shields.io/badge/node.js-22-green.svg)](https://nodejs.org/)
+[![Node.js](https://img.shields.io/badge/node.js-24-green.svg)](https://nodejs.org/)
 [![Platform](https://img.shields.io/badge/platform-macOS-lightgrey.svg)](https://www.apple.com/macos/)
 
 Automatically bookmark your Chrome tabs to Pinboard with AI-generated tags and summaries.
@@ -33,6 +33,7 @@ Automatically bookmark your Chrome tabs to Pinboard with AI-generated tags and s
 - [Examples](#examples)
 - [Performance](#performance)
 - [FAQ](#faq)
+- [Backups](#backups)
 - [Versioning and Releases](#versioning-and-releases)
 - [License](#license)
 
@@ -54,7 +55,7 @@ This tool extracts all tabs from a Chrome window, analyzes their content, genera
 
 - **macOS** (uses AppleScript to interact with Chrome)
 - **Google Chrome**
-- **Docker or Podman**
+- **Docker or Podman** (`run.sh` auto-detects Podman if Docker is not installed)
 - **Pinboard account** with API token ([get yours here](https://pinboard.in/settings/password))
 - **Node.js 22+** (inside container, automatically handled by Docker)
 
@@ -125,11 +126,13 @@ make close-all
    ```
    PINBOARD_TOKEN=username:hextoken
    ```
-   
+
+   The Makefile automatically loads `.env` -- no manual `export` needed when using `make` targets.
+
    **Alternative:** Export it directly in your shell:
    ```bash
    export PINBOARD_TOKEN="username:hextoken"
-   
+
    # Or add to ~/.zshrc or ~/.bashrc to make it permanent:
    echo 'export PINBOARD_TOKEN="username:hextoken"' >> ~/.zshrc
    ```
@@ -176,6 +179,8 @@ Common Make targets:
 - `make clear-cache` - Delete cache (rebuilds on next run)
 - `make update-cache` - Alias for refresh-cache
 - `make show-cache` - Display cache information
+- `make backup` - Export all bookmarks to `./backups/` (JSON + XML + HTML)
+- `make backup-dir DIR=/path` - Export to custom directory
 - `make stats` - Show project statistics
 - `make clean` - Remove Docker image and cache
 
@@ -464,7 +469,8 @@ This validates your PINBOARD_TOKEN environment variable is properly configured.
 ## Files
 
 - **`Makefile`** - Build automation and convenient shortcuts
-- **`run.sh`** - Main orchestrator script
+- **`run.sh`** - Main orchestrator script (auto-detects Docker or Podman)
+- **`backup.sh`** - Export all bookmarks to JSON, XML, and HTML
 - **`get_tabs.sh`** - AppleScript tab extractor
 - **`close_tabs.sh`** - AppleScript tab closer
 - **`index.js`** - Node.js processing logic (runs in container)
@@ -646,6 +652,29 @@ A: Your cache may be stale. Run `make refresh-cache` to update from Pinboard API
 
 **Q: Can I run this automatically on a schedule?**  
 A: Yes, create a cron job or launchd task. Ensure PINBOARD_TOKEN is set in the environment.
+
+## Backups
+
+Export all Pinboard bookmarks in three formats to `./backups/YYYY/MM/`:
+
+```bash
+make backup
+```
+
+Produces three timestamped files per run:
+- `pinboard_TIMESTAMP.json` - Full bookmark data (Pinboard API format)
+- `pinboard_TIMESTAMP.xml`  - XML export
+- `pinboard_TIMESTAMP.html` - Netscape bookmark HTML (legacy/browser-import format)
+
+```bash
+# Export to a custom directory
+make backup-dir DIR=/path/to/backup
+
+# Or run directly
+./backup.sh --output-dir /path/to/backup
+```
+
+Backups are committed to the repo under `./backups/`. The script waits 4 seconds between requests to respect Pinboard's rate limit on `posts/all`.
 
 ## Versioning and Releases
 

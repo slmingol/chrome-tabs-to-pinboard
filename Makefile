@@ -99,7 +99,7 @@ close-fast: check-token ## Quick test: close first 10 tabs
 	@echo "$(CYAN)Quick test: closing first 10 tabs...$(RESET)"
 	@./run.sh --window $(WINDOW) --dedupe --no-reload --close-tabs --limit 10
 
-backup: check-token ## Export all bookmarks to ./backups/ (timestamped JSON)
+backup: check-token ## Export all bookmarks to ./backups/ (JSON + XML + HTML)
 	@./backup.sh
 
 backup-dir: check-token ## Export bookmarks to custom dir (use DIR=/path/to/dir)
