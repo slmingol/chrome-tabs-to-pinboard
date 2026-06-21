@@ -56,40 +56,49 @@ MONTH="$(date +%m)"
 TIMESTAMP="$(date +%Y%m%d_%H%M%S)"
 BACKUP_DIR="${OUTPUT_DIR}/${YEAR}/${MONTH}"
 mkdir -p "$BACKUP_DIR"
-OUT_FILE="${BACKUP_DIR}/pinboard_${TIMESTAMP}.json"
 
 echo -e "${CYAN}Fetching all bookmarks from Pinboard...${RESET}"
 echo -e "${YELLOW}(This may take 30-60s for large collections)${RESET}"
 
-HTTP_CODE="$(curl -s -w "%{http_code}" \
-  -o "$OUT_FILE" \
-  "https://api.pinboard.in/v1/posts/all?auth_token=${PINBOARD_TOKEN}&format=json")"
+fetch_export() {
+  local fmt="$1"
+  local ext="$2"
+  local out="${BACKUP_DIR}/pinboard_${TIMESTAMP}.${ext}"
 
-if [[ "$HTTP_CODE" != "200" ]]; then
-  rm -f "$OUT_FILE"
-  echo -e "${RED}ERROR: Pinboard API returned HTTP ${HTTP_CODE}${RESET}"
-  if [[ "$HTTP_CODE" == "401" ]]; then
-    echo -e "${YELLOW}Check your PINBOARD_TOKEN is correct.${RESET}"
-  elif [[ "$HTTP_CODE" == "429" ]]; then
-    echo -e "${YELLOW}Rate limited. Wait a few seconds and try again.${RESET}"
+  local http_code
+  http_code="$(curl -s -w "%{http_code}" \
+    -o "$out" \
+    "https://api.pinboard.in/v1/posts/all?auth_token=${PINBOARD_TOKEN}&format=${fmt}")"
+
+  if [[ "$http_code" != "200" ]]; then
+    rm -f "$out"
+    echo -e "${RED}ERROR: Pinboard API returned HTTP ${http_code} for format=${fmt}${RESET}"
+    if [[ "$http_code" == "401" ]]; then
+      echo -e "${YELLOW}Check your PINBOARD_TOKEN is correct.${RESET}"
+    elif [[ "$http_code" == "429" ]]; then
+      echo -e "${YELLOW}Rate limited. Wait a few seconds and try again.${RESET}"
+    fi
+    return 1
   fi
-  exit 1
-fi
 
-# Validate JSON and count
+  local size
+  size="$(du -h "$out" | cut -f1)"
+  echo -e "  ${GREEN}✓${RESET} ${fmt^^}: ${CYAN}${out}${RESET} ${YELLOW}(${size})${RESET}"
+}
+
+fetch_export json json
+# Pinboard rate-limits to 1 req/3s for posts/all
+sleep 4
+fetch_export xml xml
+
+# Count bookmarks from JSON file
+JSON_FILE="${BACKUP_DIR}/pinboard_${TIMESTAMP}.json"
 COUNT="$(node -e "
   const fs = require('fs');
   try {
-    const data = JSON.parse(fs.readFileSync('${OUT_FILE}', 'utf8'));
+    const data = JSON.parse(fs.readFileSync('${JSON_FILE}', 'utf8'));
     console.log(Array.isArray(data) ? data.length : '?');
-  } catch(e) {
-    console.log('?');
-  }
+  } catch(e) { console.log('?'); }
 " 2>/dev/null || echo "?")"
 
-SIZE="$(du -h "$OUT_FILE" | cut -f1)"
-
-echo -e "${GREEN}✓ Backup complete${RESET}"
-echo -e "  Bookmarks: ${CYAN}${COUNT}${RESET}"
-echo -e "  Size:      ${CYAN}${SIZE}${RESET}"
-echo -e "  File:      ${CYAN}${OUT_FILE}${RESET}"
+echo -e "\n${GREEN}Backup complete.${RESET} ${CYAN}${COUNT}${RESET} bookmarks."
